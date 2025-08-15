@@ -1,0 +1,889 @@
+PracticeCode,GPPracticeName,PracticeListSize,Postcode,Geography
+10002,Muirhead Medical Centre,8330,DD2 5NH,Dundee City
+10017,The Blue Practice,7463,PH7 3SA,Perth and Kinross
+10036,Aberfeldy And Kinloch Rannoch Medical Practice,4864,PH15 2BL,Perth and Kinross
+10106,Grove Health Centre,6456,DD5 1DU,Dundee City
+10125,Alyth Health Centre,4632,PH11 8EQ,Perth and Kinross
+10182,Arbroath Medical Centre LLP,9753,DD11 1AD,Angus
+10233,The Abbey Practice,7047,DD11 1EN,Angus
+10286,"East Practice, Springfield Medical Centre",5127,DD11 1ES,Angus
+10322,"West Practice, Springfield Medical Centre",8641,DD11 1ES,Angus
+10361,St Margaret's Health Centre,10948,PH3 1JH,Perth and Kinross
+10407,Ardblair Medical Practice,7905,PH10 6EF,Perth and Kinross
+10445,Strathmore Surgery,3931,PH10 6BT,Perth and Kinross
+10498,Brechin Medical Practice,8583,DD9 7AN,Angus
+10638,Carnoustie Medical Group,13268,DD7 7RB,Angus
+10708,Comrie Medical Centre,2716,PH6 2LW,Perth and Kinross
+10746,Coupar Angus Medical Centre,6191,PH13 9DD,Perth and Kinross
+10835,The Red Practice,4014,PH7 3SA,Perth and Kinross
+11058,Tay Court Surgery,11205,DD1 1PF,Dundee City
+11096,Ancrum One,5129,DD2 2HZ,Dundee City
+11128,Taybank Medical Centre,9434,DD4 6EL,Dundee City
+11166,Coldside Medical Practice,10154,DD3 8DB,Dundee City
+11171,Westgate Medical Practice,13194,DD2 4AD,Dundee City
+11221,Newfield Medical Group,6376,DD4 0HU,Dundee City
+11289,Princes Street Surgery,9494,DD4 6DG,Dundee City
+11306,Broughty Family Healthcare,9366,DD5 1EP,Dundee City
+11363,Hawkhill Medical Centre,10805,DD1 5LA,Dundee City
+11382,Family Medical Group,8876,DD4 8XZ,Dundee City
+11486,Erskine Practice,8137,DD4 6QY,Dundee City
+11645,Mill Practice,8766,DD4 6QY,Dundee City
+11650,Terra Nova Medical Practice LLP,8113,DD4 6SW,Dundee City
+11823,Downfield Surgery,8650,DD3 8NE,Dundee City
+11861,Hillbank Health Centre,8488,DD3 6NF,Dundee City
+11931,Maryfield Medical Centre,6733,DD4 7AA,Dundee City
+12210,Ancrum Medical Centre,5511,DD2 2HZ,Dundee City
+12281,Nethergate Medical Centre,8191,DD1 1PB,Dundee City
+12831,Lochee Medical Practice,5009,DD2 3BR,Dundee City
+13049,Craigvinean Surgery,4332,PH8 0AD,Perth and Kinross
+13091,Edzell Health Centre,2738,DD9 7TA,Angus
+13142,The Carse Medical Practice,3633,PH2 7TD,Perth and Kinross
+13195,Ravenswood Surgery,4692,DD8 2AE,Angus
+13231,Academy Medical Centre,9005,DD8 2HA,Angus
+13284,Lour Road Group Practice,7436,DD8 2AS,Angus
+13481,St Serf's Practice,9770,KY13 8FP,Perth and Kinross
+13496,Orwell Practice,4762,KY13 8FP,Perth and Kinross
+13532,Kirriemuir Medical Practice,9016,DD8 4ES,Angus
+13571,Monifieth Medical Practice,11429,DD5 4LX,Angus
+13621,Townhead Practice,7118,DD10 8TY,Angus
+13660,Castlegait Surgery,4870,DD10 8TY,Angus
+13706,Annat Bank Practice,5787,DD10 8TY,Angus
+13848,Kings Practice,6537,PH2 0JB,Perth and Kinross
+13891,"Green Practice, Whitefriars Surgery",9681,PH1 1PP,Perth and Kinross
+13941,Victoria Practice,10959,PH2 0JB,Perth and Kinross
+13975,The Lade Medical Practice,3922,PH1 5PD,Perth and Kinross
+14037,The Taymount Surgery,16608,PH1 1NU,Perth and Kinross
+14249,"Red Practice, Whitefriars Surgery",7516,PH1 1PP,Perth and Kinross
+14291,Perth City Medical Centre,9493,PH2 8HH,Perth and Kinross
+14342,"Yellow Practice, Drumhar Health Centre",6778,PH1 5PD,Perth and Kinross
+14501,Atholl Medical Centre,4971,PH16 5FG,Perth and Kinross
+14569,Stanley Medical Centre,4296,PH1 4NN,Perth and Kinross
+16013,Roxburgh Street Surgery,3674,TD1 1PF,Scottish Borders
+16032,Jedburgh Medical Practice,6880,TD8 6EN,Scottish Borders
+16047,Newcastleton Medical Practice,1632,TD9 0RU,Scottish Borders
+16051,Eildon Surgery,6991,TD6 0PP,Scottish Borders
+16066,Merse Medical Practice,6381,TD11 3EL,Scottish Borders
+16085,Selkirk Medical Practice,7290,TD7 4LJ,Scottish Borders
+16121,St Ronan's Practice,4770,EH44 6QE,Scottish Borders
+16136,Kelso Medical Group,12019,TD5 7LF,Scottish Borders
+16141,Mairches Medical Practice Hawick,5842,TD9 9HU,Scottish Borders
+16160,The Neidpath Practice,5940,EH45 8JG,Scottish Borders
+16174,West Linton Medical Practice,3959,EH46 7EX,Scottish Borders
+16206,Coldstream Medical Practice,3918,TD12 4LQ,Scottish Borders
+16211,The Tweed Practice,6007,EH45 8JG,Scottish Borders
+16230,Braeside Medical Practice,4715,TD1 2UA,Scottish Borders
+16259,Waverley Medical Practice,5338,TD1 2UA,Scottish Borders
+16282,Duns Medical Group,3226,TD11 3EL,Scottish Borders
+16297,Mairches Medical Practice Galashiels,5090,TD1 2UA,Scottish Borders
+16475,Greenlaw Surgery,1450,TD10 6XJ,Scottish Borders
+16507,Eyemouth Medical Practice,6734,TD14 5DD,Scottish Borders
+16545,Teviot Medical Practice,11748,TD9 9DT,Scottish Borders
+16550,Stow & Lauder Health,4656,TD1 2SQ,Scottish Borders
+16564,Earlston Medical Practice,3460,TD4 6DW,Scottish Borders
+18057,Lochinch Practice,3150,DG9 7DW,Dumfries and Galloway
+18095,Loch Ree Practice,4453,DG9 7DW,Dumfries and Galloway
+18112,Mull of Galloway Practice,731,DG9 9QQ,Dumfries and Galloway
+18151,Cairnsmore Medical Practice,3989,DG8 6NR,Dumfries and Galloway
+18184,Castle Douglas Medical Group,6776,DG7 3EE,Dumfries and Galloway
+18199,Solway Medical Group,6440,DG6 4BJ,Dumfries and Galloway
+18216,"Drs Oliver, Greeley &Innes",3931,DG7 3EE,Dumfries and Galloway
+18235,Glenkens Medical Practice,1849,DG7 3RN,Dumfries and Galloway
+18240,Dalbeattie Medical Practice,4937,DG5 4AZ,Dumfries and Galloway
+18254,Shebburn Medical Practice,2813,DG2 8BY,Dumfries and Galloway
+18273,St Michaels Medical Centre,6996,DG1 2PX,Dumfries and Galloway
+18288,Lochthorn Medical Centre,3865,DG1 1TR,Dumfries and Galloway
+18305,Charlotte Medical Practice,9281,DG2 9BH,Dumfries and Galloway
+18310,Gillbrae Medical Practice,13847,DG1 4EJ,Dumfries and Galloway
+18339,Thornhill Medical Practice,3870,DG3 5AA,Dumfries and Galloway
+18343,Cairn Valley Medical Practice,3871,DG2 0UJ,Dumfries and Galloway
+18377,Lochmaben Medical Group,5956,DG11 1NH,Dumfries and Galloway
+18409,Greencroft South Medical Group,6682,DG12 6GS,Dumfries and Galloway
+18413,Dr N G Kelly & Partners,7402,DG12 6GN,Dumfries and Galloway
+18428,Gretna Surgery,4895,DG16 5NA,Dumfries and Galloway
+18432,Canonbie Surgery,2179,DG14 0UX,Dumfries and Galloway
+18447,Langholm Medical Partnership,2824,DG13 0JY,Dumfries and Galloway
+18451,Ecclefechan Surgery,3024,DG11 3BT,Dumfries and Galloway
+18560,Greyfriars Medical Centre,11832,DG1 1DL,Dumfries and Galloway
+18574,Sandhead Surgery,2565,DG9 9DP,Dumfries and Galloway
+18589,Glenluce Surgery,2210,DG8 0PU,Dumfries and Galloway
+18593,Lochnaw Practice,4452,DG9 7DW,Dumfries and Galloway
+18611,Southern Machars Practice,3215,DG8 8PS,Dumfries and Galloway
+18625,Galloway Hills Medical Practice,4474,DG8 6NR,Dumfries and Galloway
+18630,Upper Nithsdale Group Practice,4534,DG4 6BT,Dumfries and Galloway
+18644,Lockerbie Medical Practice,4491,DG11 2BJ,Dumfries and Galloway
+18659,Moffat Medical Practice,5107,DG10 9JP,Dumfries and Galloway
+20004,Anstruther Medical Practice,6297,KY10 3FF,Fife
+20057,Auchtermuchty Practice,5664,KY14 7AW,Fife
+20108,Muiredge Surgery,8915,KY8 1HJ,Fife
+20151,Burntisland Medical Group,5506,KY3 9DF,Fife
+20184,The Links Practice,1928,KY3 9DF,Fife
+20254,Wallsgreen Medical Practice,2936,KY5 0JE,Fife
+20305,Cowdenbeath Surgery,11606,KY4 9DH,Fife
+20358,Crossgates Medical Practice,4196,KY4 8DF,Fife
+20409,Eden Villa Practice,7271,KY15 4JN,Fife
+20413,Bank Street Medical Group,8076,KY15 4JN,Fife
+20451,Nethertown Surgery,11416,KY11 4TF,Fife
+20466,New Park Medical Practice,12313,KY12 0BL,Fife
+20471,Hospital Hill Surgery,8628,KY11 3BA,Fife
+20485,Millhill Surgery,9574,KY11 4JW,Fife
+20490,Bellyeoman Surgery,10950,KY12 0AE,Fife
+20502,Linburn Road Health Centre,8852,KY11 4LT,Fife
+20606,The Lomond Practice,10525,KY6 1HL,Fife
+20611,North Glen Medical Practice,8777,KY7 6SX,Fife
+20630,The Glenwood Practice,6175,KY6 1HL,Fife
+20659,Cos Lane Surgery,9213,KY7 4AQ,Fife
+20663,Rothes Medical Practice,8731,KY7 4RH,Fife
+20729,Valleyfield Medical Practice,3954,KY12 8SJ,Fife
+20752,Inverkeithing Medical Group,18755,KY11 1NU,Fife
+20803,Kelty Medical Practice,7357,KY4 0AE,Fife
+20856,Kennoway Medical Group,4291,KY8 5JZ,Fife
+20907,Kinghorn Medical Practice,3261,KY3 9RT,Fife
+20964,"Drs McKenna, Murphy & Brodie",6883,KY1 2NA,Fife
+20979,Bennochy Medical Centre,9596,KY2 5RB,Fife
+20983,St Brycedale Surgery,7611,KY1 1ER,Fife
+20998,Path House Medical Practice,17211,KY1 2PG,Fife
+21007,"Drs Dixon, Duggan, Egerton, MacKernan, McCrickard & Walker",8050,KY1 2NA,Fife
+21011,Drs Fordyce & Parish,6692,KY1 2NA,Fife
+21101,Howe of Fife Surgery,4658,KY15 7JS,Fife
+21153,Leslie Medical Practice,6569,KY6 3LQ,Fife
+21204,Pitcairn Practice Leuchars & Balmullo,5044,KY16 0DZ,Fife
+21261,Scoonie Medical Practice,12781,KY8 4ET,Fife
+21308,Charlestown Surgery,2760,KY11 3ED,Fife
+21384,Meadows Practice,5144,KY5 9QZ,Fife
+21421,Benarty Medical Practice,4805,KY5 8DA,Fife
+21440,Dr K Thompson,2227,KY5 9QZ,Fife
+21454,Markinch Medical Practice,6058,KY7 6ER,Fife
+21469,Lochgelly Medical Practice,3401,KY5 9QZ,Fife
+21505,Methilhaven Surgery,2570,KY8 1HU,Fife
+21524,Airlie Medical Practice,10830,KY8 3RS,Fife
+21558,Newburgh Surgery,4091,KY14 6DA,Fife
+21609,Tayview Medical Practice,9244,DD6 8DJ,Fife
+21613,Oakley Medical practice,9010,KY12 9QH,Fife
+21736,Coast Health,5287,KY10 2LG,Fife
+21755,Primrose Lane Medical Centre,9948,KY11 2ZL,Fife
+21760,Park Road Practice,5883,KY11 2SE,Fife
+21825,Blackfriars Medical Practice,9583,KY16 8AR,Fife
+21830,Pipeland Medical Practice,15367,KY16 8AR,Fife
+25084,The Richmond Practice,8488,EH51 0DQ,Falkirk
+25173,Denny Cross Medical Centre,5498,FK6 6DB,Falkirk
+25188,Carronbank Medical Practice,10731,FK6 6GD,Falkirk
+25192,Antonine Medical Practice,4884,FK4 1ED,Falkirk
+25205,Bonnybank Medical Practice,8322,FK4 1ED,Falkirk
+25262,Wallace Medical Centre,8249,FK2 7AZ,Falkirk
+25277,Ark Medical Practice,2736,FK1 1BA,Falkirk
+25281,Meeks Road Surgery,10276,FK2 7ES,Falkirk
+25309,Graeme Medical Centre,5426,FK2 7HR,Falkirk
+25313,Camelon Medical Practice,8065,FK1 4PP,Falkirk
+25332,Bo'ness Road Medical Practice,7459,FK3 8AN,Falkirk
+25390,Viewpoint Medical Practice,6528,FK5 3BB,Falkirk
+25402,Parkview Practice,5101,FK5 3BB,Falkirk
+25441,Polmont Park Medical Practice,8727,FK2 0XF,Falkirk
+25455,Braesview Medical Group,9391,FK2 0XF,Falkirk
+25460,Parkhill Medical Practice,11955,FK2 0XF,Falkirk
+25474,Slamannan Medical Practice,2185,FK1 3EZ,Falkirk
+25597,Stenhouse Practice,3332,FK5 3BB,Falkirk
+25648,Tryst Medical Centre,6281,FK5 4HT,Falkirk
+25652,Carron Medical Centre,4480,FK2 7TA,Falkirk
+25671,Ochilview Practice,5822,FK5 3BB,Falkirk
+26208,Kinneil Medical Practice,8106,EH51 0DQ,Falkirk
+30030,Garthdee Medical Group,9940,AB10 7QQ,Aberdeen City
+30059,Holburn Medical Group,9204,AB10 1YE,Aberdeen City
+30078,Newburn Health Centre,20283,AB10 1UT,Aberdeen City
+30097,Whinhill Medical Practice,10433,AB11 7XH,Aberdeen City
+30203,Elmbank Group Practice,11773,AB25 2AY,Aberdeen City
+30218,Hamilton Medical Group,9133,AB15 4ZT,Aberdeen City
+30256,Bucksburn Medical Practice,6107,AB21 9DG,Aberdeen City
+30261,Westburn Medical Group,6508,AB25 2XE,Aberdeen City
+30280,New Dyce Medical Practice,9938,AB21 7NQ,Aberdeen City
+30311,Torry Medical Practice,6993,AB11 8ER,Aberdeen City
+30326,Great Western Medical Practice,9984,AB15 7YT,Aberdeen City
+30401,Kincorth Medical Practice,14494,AB12 5NA,Aberdeen City
+30504,Old Machar Medical Practice,18394,AB24 5RS,Aberdeen City
+30561,Marywell Healthcare Centre,170,AB24 5HT,Aberdeen City
+30627,Links Medical Practice,8241,AB24 5AU,Aberdeen City
+30701,Calsayseat Medical Group,11753,AB25 3TX,Aberdeen City
+30909,Albyn Medical Practice,11182,AB10 1NW,Aberdeen City
+30928,King's Medical Practice,24596,AB24 3NG,Aberdeen City
+30951,Rubislaw Place Medical Group,8175,AB10 1QB,Aberdeen City
+31009,Kingswells Medical Practice,7381,AB15 8TB,Aberdeen City
+31141,Woodside Medical Group,13269,AB24 2AS,Aberdeen City
+31206,Scotstown Medical Group,12665,AB22 8LD,Aberdeen City
+31211,Gilbert Road Medical Group,9968,AB21 9AN,Aberdeen City
+31230,Cults Medical Group,9081,AB15 9LQ,Aberdeen City
+31244,Peterculter Medical Practice,8000,AB14 0RP,Aberdeen City
+31259,Danestone Medical Practice,6404,AB22 8ZP,Aberdeen City
+31348,Camphill Medical Practice,2136,AB15 9EP,Aberdeen City
+31437,Macduff Medical Practice,12398,AB45 1JD,Aberdeenshire
+31475,An Caorann Medical Practice,4705,AB45 2GB,Aberdeenshire
+31511,Finlayson Street Practice,9565,AB43 9JW,Aberdeenshire
+31598,Saltoun Surgery,8290,AB43 9NH,Aberdeenshire
+31601,Crimond Medical Centre,3568,AB43 8QJ,Aberdeenshire
+31615,Cruden Medical Group,3717,AB42 0QQ,Aberdeenshire
+31634,Peterhead Health Centre,23384,AB42 2XA,Aberdeenshire
+31672,Central Buchan Medical Group,6430,AB43 6NE,Aberdeenshire
+31691,Aden Health Centre,8346,AB42 5GP,Aberdeenshire
+31723,Turriff Medical Practice,8645,AB53 4DQ,Aberdeenshire
+31812,Strathdon Medical Centre,783,AB36 8XB,Aberdeenshire
+31899,Alford Medical Practice,5907,AB33 8FL,Aberdeenshire
+31901,Ellon Group Practice,15660,AB41 9AH,Aberdeenshire
+31916,Haddo Medical Group,5781,AB41 7NX,Aberdeenshire
+32001,Insch Medical Practice,6621,AB52 6JJ,Aberdeenshire
+32021,Inverurie Medical Group,25508,AB51 3UL,Aberdeenshire
+32035,Kemnay Medical Group,6532,AB51 5NB,Aberdeenshire
+32092,Bydand Medical Group,7755,AB54 8EX,Aberdeenshire
+32209,Skene Medical Group,15271,AB32 6FG,Aberdeenshire
+32290,Aboyne Health Centre,6620,AB34 5HQ,Aberdeenshire
+32317,Ballater Clinic,1875,AB35 5NN,Aberdeenshire
+32355,Torphins Medical Practice,2157,AB31 4JQ,Aberdeenshire
+32393,Braemar Health Clinic,725,AB35 5WR,Aberdeenshire
+32406,Banchory Group Practice,13303,AB31 5XS,Aberdeenshire
+32411,Portlethen Medical Centre,16078,AB12 4QP,Aberdeenshire
+32425,Stonehaven Medical Group,13136,AB39 2EL,Aberdeenshire
+32500,Auchenblae Medical Centre,2268,AB30 1XU,Aberdeenshire
+32514,Inverbervie Medical Group,5818,DD10 0RU,Aberdeenshire
+32529,Laurencekirk Medical Group,6145,AB30 1GX,Aberdeenshire
+32586,Ardach Health Centre,8268,AB56 1JE,Moray
+32622,Seafield & Cullen Medical Group,7287,AB56 1FP,Moray
+32707,Linkwood Medical,12653,IV30 6GQ,Moray
+32750,Fochabers Medical Practice,4478,IV32 7EP,Moray
+32764,Moray Coast Medical Practice,10277,IV31 6TU,Moray
+32779,Maryhill Group Practice,22510,IV30 1AT,Moray
+32801,Varis Medical Practice,8394,IV36 1JG,Moray
+32815,Culbin Medical Practice,8400,IV36 1JG,Moray
+32904,Keith Medical Group,7377,AB55 5DJ,Moray
+33057,Rinnes Medical Group,3209,AB55 4FJ,Moray
+33061,Glenlivet Medical Practice,577,AB37 9AN,Moray
+33081,Aberlour Health Centre,2998,AB38 9PR,Moray
+38012,Skerryvore Practice,8709,KW15 1NZ,Orkney Islands
+38027,Stromness Surgery,3054,KW16 3AD,Orkney Islands
+38051,Daisy Villa,1537,KW17 2SN,Orkney Islands
+38084,Islands View Surgery,254,KW17 2PU,Orkney Islands
+38205,Heilendi Practice,3938,KW15 1NZ,Orkney Islands
+38210,Dounby Surgery,2862,KW17 2HH,Orkney Islands
+38239,Orcades Practice,1952,KW15 1NZ,Orkney Islands
+39015,Yell Health Centre,964,ZE2 9BX,Shetland Islands
+39020,Whalsay Health Centre,1049,ZE2 9AE,Shetland Islands
+39034,Hillswick Health Centre,816,ZE2 9RW,Shetland Islands
+39049,Brae Medical Practice,2535,ZE2 9QJ,Shetland Islands
+39068,Bixter Health Centre,1911,ZE2 9NA,Shetland Islands
+39072,Levenwick Health Centre,2686,ZE2 9HX,Shetland Islands
+39087,Scalloway Health Centre LLP,3782,ZE1 0TN,Shetland Islands
+39091,Lerwick Health Centre,8566,ZE1 0RB,Shetland Islands
+39161,Unst Health Centre,615,ZE2 9DY,Shetland Islands
+40008,Fulton Street Medical Centre,6279,G13 1JE,Glasgow City
+40012,BuckinghamTerraceMedicalPractice,8553,G12 8ED,Glasgow City
+40027,The Terrace Medical Practice,7783,G61 3RD,East Dunbartonshire
+40031,Dr MacLaren & Dr McAdam Partnership,5168,G3 7UA,Glasgow City
+40046,Red Wing Medical Practice,8583,G81 1BS,West Dunbartonshire
+40051,Anniesland Medical Practice,8976,G13 2UP,Glasgow City
+40065,Old Kilpatrick Medical Practice,5599,G60 5JG,West Dunbartonshire
+40070,Abingdon Medical Practice,3735,G11 5PE,Glasgow City
+40084,Pennan Practice,2583,G14 0EA,Glasgow City
+40101,Kessington Medical Centre,7866,G61 2DN,East Dunbartonshire
+40121,The Broomhill Practice,7223,G11 7AD,Glasgow City
+40140,Northcote Surgery,12142,G12 9LD,Glasgow City
+40154,Queens Crescent Surgery,8451,G4 9BL,Glasgow City
+40173,Ashfield Medical Practice,7989,G62 6BT,East Dunbartonshire
+40188,Hyndland Road Surgery,2939,G12 9PN,Glasgow City
+40192,Gardner Street Surgery,3259,G11 5NG,Glasgow City
+40224,The Green Medical Practice,9372,G81 1BS,West Dunbartonshire
+40262,Bluewing Medical Practice,6185,G81 1BS,West Dunbartonshire
+40277,"Drs McAlpine, Walker & Pettigrew",4379,G11 7SY,Glasgow City
+40281,Dr Haggerty,1952,G15 6EG,Glasgow City
+40296,Peel Street Medical Centre,2002,G11 5LL,Glasgow City
+40328,Drs Melrose & Sharp Partnership,5198,G3 7UA,Glasgow City
+40332,Knightswood Medical Practice,5754,G13 2SW,Glasgow City
+40351,Dr A P Jackson & Partners,5601,G12 9JE,Glasgow City
+40385,Kersland House Surgery,7578,G62 8BT,East Dunbartonshire
+40390,Drs Smith & Gormley,2369,G13 4PU,Glasgow City
+40417,Whiteinch Medical Practice,2163,G14 9UT,Glasgow City
+40421,"Drs Foster, Logan and Macdonald",2542,G15 7TS,Glasgow City
+40436,Garscadden Burn Medical Practice,5472,G15 7TS,Glasgow City
+40455,"Drs MacNeill, Clarey & Henderson",6496,G3 8ND,Glasgow City
+40460,Dr A Khan,2592,G12 8ND,Glasgow City
+40493,The Cairntoul Practice,2301,G14 0XT,Glasgow City
+40525,Yoker Medical Centre,4702,G14 0NT,Glasgow City
+40544,Drumchapel Medical Practice,3066,G15 7TS,Glasgow City
+40559,Kinfauns Medical Practice,2776,G15 7TS,Glasgow City
+40563,Scotstoun Medical Practice,2063,G14 9XL,Glasgow City
+40582,The Orange Wing Medical Practice,6079,G81 1BS,West Dunbartonshire
+40629,Glasgow West Medical Practice,5486,G14 9PS,Glasgow City
+40667,Challenging Behaviour Practice,53,G4 0UP,Glasgow City
+40691,Yellow Medical Practice,7217,G81 1BS,West Dunbartonshire
+40703,Dr Rai & Partners,3326,G81 1BS,West Dunbartonshire
+40718,Ashton Medical Practice,8321,G12 8SP,Glasgow City
+40722,Drs Gavin & Nimmo,4214,G15 7TS,Glasgow City
+40741,Denbridge Medical Practice,9352,G61 2SY,East Dunbartonshire
+40761,Barclay Clydeside,13022,G14 9UU,Glasgow City
+43011,Gairbraid Medical Practice,6025,G20 8FB,Glasgow City
+43030,Regent Gardens Medical Centre,10858,G66 1DH,East Dunbartonshire
+43044,The Turret Medical Centre,6834,G66 1JB,East Dunbartonshire
+43059,Springfield Medical Practice,9348,G64 1PJ,East Dunbartonshire
+43063,Dr A. Polding,2900,G21 1TR,Glasgow City
+43082,Dr Burton & Dr Krishnan,2403,G20 7ER,Glasgow City
+43097,Atlas Medical Practice,3002,G21 1TR,Glasgow City
+43100,Southbank Surgery,7110,G66 1NH,East Dunbartonshire
+43114,Peel View Medical Centre,10518,G66 1DN,East Dunbartonshire
+43129,"Drs Ballantyne, Gallagher & McLennan",3601,G21 1TR,Glasgow City
+43133,The Barony Medical Centre,5561,G21 4AH,Glasgow City
+43167,The Firhill Practice,5867,G20 7ER,Glasgow City
+43171,Kenmure Medical Practice,8499,G64 1PJ,East Dunbartonshire
+43186,"Drs Leslie, Ojo & Chetty",7050,G20 7ER,Glasgow City
+43191,Drs Gaw & Esler,3368,G20 7ER,Glasgow City
+43203,Kelvin Medical Centre,4194,G20 6HS,Glasgow City
+43218,"Drs Adair, Denholm & Pugh",6372,G20 7ER,Glasgow City
+43222,Auchinairn Medical Practice,6949,G64 1NF,East Dunbartonshire
+43237,Keppoch Medical Practice,4235,G22 5AP,Glasgow City
+43256,Balmore Surgery,3610,G22 5AP,Glasgow City
+43261,Lennoxtown Medical Practice,3296,G66 7JJ,East Dunbartonshire
+43275,"Drs Meek ,Fox & Black",3676,G21 3RW,Glasgow City
+43294,Allander Surgery,3535,G22 5SS,Glasgow City
+43307,Dr Campbell & Dr Halstvedt,3168,G22 7JL,Glasgow City
+43311,Maryhill Red Practice,5498,G20 8FB,Glasgow City
+43326,Fernbank Medical Centre,5065,G22 6BD,Glasgow City
+43453,Dr Rasul & Thompson,7075,G20 7ER,Glasgow City
+43468,Dr Ho Chong Teck,1980,G20 7ER,Glasgow City
+43504,Dr Harris & Partners,7281,G21 1TR,Glasgow City
+43538,Dr Langridge,2286,G22 5AP,Glasgow City
+43542,Dr M Showkat,2382,G22 5AP,Glasgow City
+43557,Dr Paul Lyons,1711,G64 2AA,East Dunbartonshire
+43576,Barclay Medical Practice,61917,G20 8FB,Glasgow City
+43581,Woodhead Medical Practice,6846,G66 3BF,East Dunbartonshire
+46019,Townhead Medical Practice,16690,G31 2ES,Glasgow City
+46023,Dr Ali & Dr Mackenzie,2434,G40 2DA,Glasgow City
+46057,Glenmill Medical Practice,7469,G33 1EY,Glasgow City
+46061,Parade Group Practice,19889,G31 2ES,Glasgow City
+46081,The Cairns Practice,10083,G32 7JZ,Glasgow City
+46095,Drs Mckenzie & Burns,3045,G31 5BA,Glasgow City
+46112,Drs Wilson & Boyd,5234,G33 3TU,Glasgow City
+46127,Annfield Medical Centre,2305,G31 2XE,Glasgow City
+46131,Crail Medical Practice,4279,G31 4UW,Glasgow City
+46146,Carntyne Medical Centre,4479,G32 6JP,Glasgow City
+46151,Dr M Khan,2699,G40 3LJ,Glasgow City
+46165,Dr S Ross,3936,G32 7JZ,Glasgow City
+46184,Main Street Medical Centre,8692,G40 1HA,Glasgow City
+46201,Dr Miller & Fleming,3256,G32 6NB,Glasgow City
+46216,McGlone Practice,13188,G69 7AD,Glasgow City
+46235,Forge Medical Practice,4979,G31 5BA,Glasgow City
+46292,Drs Mccallum & Gardiner,3320,G32 6NB,Glasgow City
+46305,The Muirside Medical Practice,8496,G69 7AD,Glasgow City
+46339,Westmuir Medical Centre,3804,G31 5RA,Glasgow City
+46343,Tollcross Medical Centre,8559,G32 8UH,Glasgow City
+46381,Drs Day & Raja,2291,G40 2DA,Glasgow City
+46396,Dr M P Hamayun,1465,G40 2DA,Glasgow City
+46428,Dr Connaughton,4779,G40 2DA,Glasgow City
+46447,Dr M Saleem,1615,G40 2DA,Glasgow City
+46451,Newhills Medical Practice,10083,G34 9HQ,Glasgow City
+46471,Lochend Surgery,2593,G34 9HQ,Glasgow City
+46521,"Drs Al-Agilly, Morgan & Omar",6433,G33 3AL,Glasgow City
+46555,Abercromby Practice,3221,G40 2DA,Glasgow City
+46560,The Whitevale Medical Group,4698,G31 1QS,Glasgow City
+46574,Dalmarnock Family M P,1160,G40 2DA,Glasgow City
+46606,Drs Lynas & Rodgers,3329,G40 2DA,Glasgow City
+46611,Calton Medical Practice,1978,G40 2DA,Glasgow City
+46625,Meadowpark Surgery,8536,G31 3BP,Glasgow City
+46630,Oakwood Medical Practice,7482,G34 9HQ,Glasgow City
+49041,Practice B,11983,G42 7DR,Glasgow City
+49074,Dr C Mills & Partners,4541,G5 9AB,Glasgow City
+49093,Eglinton Medical Centre,2383,G5 9RP,Glasgow City
+49106,Pinecroft Medical Practice,7207,G44 5JT,Glasgow City
+49130,"Drs McGivern, Murthy & Sinha",4501,G42 9JT,Glasgow City
+49144,Nithsdale Merryvale Group Practice,9317,G41 5RU,Glasgow City
+49159,Drs Boardman & Partners,7380,G76 7HN,East Renfrewshire
+49178,The Victoria Practice,6217,G42 7DR,Glasgow City
+49197,Sheddens Medical Practice,2388,G76 7BU,East Renfrewshire
+49200,Drs Geddes & Partners,5126,G41 3YT,Glasgow City
+49214,Dr Masson & Partners,8243,G76 7HN,East Renfrewshire
+49248,Merrylee Medical Centre,6563,G44 3DH,Glasgow City
+49267,Butterbiggins Medical Centre,5024,G42 7AF,Glasgow City
+49271,Shawlands Surgery,6190,G41 3RG,Glasgow City
+49286,Queens Park Medical Practice,3246,G42 8QD,Glasgow City
+49318,Baker Street Surgery,2348,G41 3YA,Glasgow City
+49337,Mearns Medical Centre,15518,G77 5BQ,East Renfrewshire
+49375,Dr Linda J Wright,2324,G42 0EH,Glasgow City
+49445,Eastwoodmains Medical Practice,4905,G76 7HN,East Renfrewshire
+49464,Broomburn Medical Centre,3091,G77 5LU,East Renfrewshire
+49553,"Drs Rennie, Gallacher, Steel & Lange",6019,G41 3PT,Glasgow City
+49568,Greenlaw Medical Practice,4827,G77 6GR,East Renfrewshire
+49604,The Gordon Practice,5968,G5 9AB,Glasgow City
+49619,Elmwood Medical Practice,2961,G76 7HN,East Renfrewshire
+49623,Carolside Medical Centre,8306,G76 7BX,East Renfrewshire
+49638,The Maclean Medical Practice,9244,G76 7HN,East Renfrewshire
+49676,Regency Medical Practice,3198,G41 1NX,Glasgow City
+49681,Mount Florida Medical Centre,8997,G42 9LQ,Glasgow City
+49712,Dr M. M. Sharif & Dr M. T. Saleem,2051,G41 3YA,Glasgow City
+49751,Castlemilk Group Practice,10931,G45 9AW,Glasgow City
+49765,The Ker Practice,9973,G44 5JT,Glasgow City
+49770,Kingspark Surgery,5176,G44 4JE,Glasgow City
+49784,Williamwood Medical Practice,8939,G76 7NW,East Renfrewshire
+49801,Shields Medical Practice,3976,G41 1NX,Glasgow City
+52005,Midlock Medical Centre,9344,G51 1SL,Glasgow City
+52024,Thurston Road Medical Practice,4369,G52 2AZ,Glasgow City
+52039,Dr C P Fraser & Partners,6090,G42 7DR,Glasgow City
+52043,Braidcraft Medical Centre,6127,G53 5QD,Glasgow City
+52058,The Crescent Medical Practice,6319,G51 1AT,Glasgow City
+52062,The David Elder Medical Practice,5316,G51 4BJ,Glasgow City
+52096,The Green Practice Govan,4869,G51 4BJ,Glasgow City
+52109,Drs Chita & Hayes,2771,G51 1RN,Glasgow City
+52128,Dr Ferguson & Partners,10584,G41 1HU,Glasgow City
+52147,Sycamore Medical Practice,2030,G53 7RN,Glasgow City
+52151,Waverley Park Medical Practice,4363,G41 3UJ,Glasgow City
+52185,Dr O'Neill & Associates,3575,G52 3SS,Glasgow City
+52202,Rutland Surgery,3795,G51 1HS,Glasgow City
+52217,Dr Mckeeve,1899,G41 1HU,Glasgow City
+52221,Thorntree Practice,6514,G46 8NY,Glasgow City
+52241,Dr Mair & Partners,7415,G52 3QN,Glasgow City
+52255,The Village Practice - Thornliebank,8740,G46 8NY,Glasgow City
+52260,Dr Alam's Surgery,1594,G41 1HU,Glasgow City
+52293,The Peat Road Medical Practice,5113,G53 6EQ,Glasgow City
+52330,Yellow Practice,4197,G51 4BJ,Glasgow City
+52344,Crookston Medical Practice,6589,G53 7FY,Glasgow City
+52359,Craigton Medical Practice,8662,G51 4BJ,Glasgow City
+52400,The Silver Burn Medical Practice,5848,G53 6EQ,Glasgow City
+52414,Drs Datta & Partners,4925,G52 3SS,Glasgow City
+52429,Pollokshaws Medical Centre,9758,G43 1RR,Glasgow City
+52433,The Khan Medical Surgery,3472,G44 4JE,Glasgow City
+55003,Thurso & Halkirk Medical Practice,6143,KW14 7DH,Highland
+55041,Nairn Healthcare Group,15756,IV12 5EE,Highland
+55075,Dunbeath Surgery,685,KW6 6EZ,Highland
+55080,Canisbay & Castletown Joint Medical Practice,2750,KW14 8TY,Highland
+55145,The Pearson Practice,2647,KW1 5EL,Highland
+55183,Armadale Medical Practice,925,KW14 7SA,Highland
+55201,Dornoch Medical Practice,2858,IV25 3LS,Highland
+55220,Golspie Medical Practice,1993,KW10 6TH,Highland
+55249,Lairg Health Centre,1222,IV27 4DD,Highland
+55253,Assynt Medical Practice,952,IV27 4JZ,Highland
+55272,Tongue Medical Practice,520,IV27 4XB,Highland
+55287,Helmsdale/Brora Med Practice,2557,KW9 6QJ,Highland
+55291,Creich Surgery,1654,IV24 3EP,Highland
+55304,"Scourie, Kinlochbervie and Durness Medical Practice",882,IV27 4RP,Highland
+55323,Three Harbours Medical Group,13568,KW14 7AR,Highland
+55338,Alness/Invergordon Med Prcte,13001,IV17 0UN,Highland
+55342,Applecross Surgery,254,IV54 8LS,Highland
+55357,Aultbea & Gairloch Medical Practice,2316,IV22 2HU,Highland
+55376,Dingwall Medical Group,11602,IV15 9QS,Highland
+55381,Fortrose Medical Practice,5079,IV10 8SY,Highland
+55395,Lochcarron Medical Partnership,964,IV54 8YD,Highland
+55408,Munlochy Surgery,3439,IV8 8NG,Highland
+55412,Strathpeffer Medical Practice,3886,IV14 9AG,Highland
+55427,Tain & District Med Group,3194,IV19 1EU,Highland
+55431,Tain & Fearn Area Med Practice,5803,IV19 1EU,Highland
+55446,Torridon Medical Practice,456,IV22 2EZ,Highland
+55451,Ullapool Health Centre,2493,IV26 2XL,Highland
+55521,Carbost Medical Practice,646,IV47 8ST,Highland
+55535,Dunvegan Medical Practice,1824,IV55 8GU,Highland
+55554,Glenelg Health Centre,244,IV40 8JD,Highland
+55569,Kyle Medical Practice,2754,IV40 8AE,Highland
+55573,Portree Medical Centre,5503,IV51 9BZ,Highland
+55605,Craig Nevis Surgery,3786,PH33 7AQ,Highland
+55610,Glen Mor Medical Practice,5672,PH33 7AQ,Highland
+55624,Tweeddale Medical Practice,5160,PH33 7AQ,Highland
+55639,Kinlochleven Medical Practice,928,PH50 4QU,Highland
+55677,Small Isles Medical Practice - Isle of Eigg,187,PH42 4RL,Highland
+55696,Aird Medical Practice,3458,IV4 7EA,Highland
+55709,Croyard Road Surgery,6271,IV4 7DJ,Highland
+55728,Drumnadrochit Medical Practice,2546,IV63 6UL,Highland
+55732,Cill Chuimein Medical Centre,1622,PH32 4BH,Highland
+55747,Loch Ness East And Strathnairn,990,IV2 6YB,Highland
+55751,Culloden Surgery,6131,IV2 7LL,Highland
+55766,Culloden Medical Practice,6918,IV2 7LL,Highland
+55817,Kingsmills Medical Practice,9738,IV2 3BG,Highland
+55836,Fairfield Medical Practice,6944,IV3 8HH,Highland
+55841,Riverside Medical Practice,10000,IV3 5PW,Highland
+55860,Kinmylies Medical Practice,3833,IV3 8PB,Highland
+55874,Southside Road Surgery,4988,IV2 4XA,Highland
+55889,Burnfield Medical Practice,7798,IV2 3PF,Highland
+55893,Crown Medical Practice,6370,IV2 3NF,Highland
+55911,Aviemore Medical Practice,5595,PH22 1AJ,Highland
+55925,Grantown-On-Spey Medical Practice,5525,PH26 3HR,Highland
+55930,Kingussie Medical Practice,3136,PH21 1ET,Highland
+55944,Gergask Surgery,475,PH20 1AH,Highland
+56006,Cairn Medical Practice,10006,IV2 4AG,Highland
+56011,Dunedin Medical Practice,2587,IV2 4TP,Highland
+56025,Ballachulish Medical Practice,1574,PH49 4JB,Highland
+56030,Mallaig And Arisaig Medical Practice,1820,PH41 4RN,Highland
+56523,SOUTH SKYE MEDICAL PRACTICES,2907,IV49 9AA,Highland
+56538,Cromarty Medical Practice,1131,IV11 8YF,Highland
+56576,West Highland Medical Group,1816,PH36 4JU,Highland
+60054,Jamieson Medical Practice,14816,G69 9DW,North Lanarkshire
+60073,Nalagatla Medical Practice,4233,G33 6HA,North Lanarkshire
+60088,Stepps Surgery,3999,G33 6EY,North Lanarkshire
+60092,The Stonelaw Practice,13708,G73 2PQ,South Lanarkshire
+60105,Skye Glen Medical Practice,4755,G73 2PQ,South Lanarkshire
+60110,Drs Jordan & Canning,4832,G73 2PQ,South Lanarkshire
+60124,Silverbank Surgery,5863,G72 8HA,South Lanarkshire
+60139,Overtoun Medical Practice,4480,G73 2PQ,South Lanarkshire
+60143,North Avenue Surgery,11100,G72 8AT,South Lanarkshire
+60158,Mill Street Surgery,1672,G73 2LD,South Lanarkshire
+60177,The Craigallian Avenue Practice,9354,G72 8RW,South Lanarkshire
+60181,Dr Friel & Dr Bagnall,3751,G73 2PQ,South Lanarkshire
+60196,Parkview Practice,2433,G73 2PQ,South Lanarkshire
+60209,Ardoch Medical Practice,5155,G72 8HA,South Lanarkshire
+60213,The Motherwell Medical Practice,14965,ML1 1TA,North Lanarkshire
+60228,Glenboig Surgery,4096,ML5 2RY,North Lanarkshire
+61061,Adam Avenue Practice,10152,ML6 6DB,North Lanarkshire
+61131,Tinto Medical Practice,5329,ML6 6DB,North Lanarkshire
+61151,Bankhouse Medical Practice,6091,ML6 6DB,North Lanarkshire
+61216,Centenary Surgery,2481,ML5 4BY,North Lanarkshire
+61240,The Faraday Medical Practice,7031,ML5 3AP,North Lanarkshire
+61324,Condorrat Medical Practice,5291,G67 4DN,North Lanarkshire
+61339,Caledonia Medical Practice,17187,G67 1BJ,North Lanarkshire
+61343,The Glen Medical Practice,11586,G67 1BJ,North Lanarkshire
+61358,Kenilworth Medical Centre,13316,G67 1BP,North Lanarkshire
+61377,Abronhill Medical Group,4577,G67 3BE,North Lanarkshire
+61381,Dr DJ Clifford,3087,G67 3BE,North Lanarkshire
+61447,Waverley Medical Practice,22568,ML5 3AP,North Lanarkshire
+61466,Atrium Medical Practice,6479,ML5 3BJ,North Lanarkshire
+61485,Church Street Practice,6230,ML5 3BJ,North Lanarkshire
+61502,Kilsyth Medical Partnership,13936,G65 9JE,North Lanarkshire
+61625,WELLWYND PRACTICE,20372,ML6 6DB,North Lanarkshire
+61644,Strathcalder Practice,7977,G74 3BE,South Lanarkshire
+61659,Thistle Medical Practice,6708,ML6 6DB,North Lanarkshire
+61663,Alba Medical Group - Coatbank,6325,ML5 3AP,North Lanarkshire
+62011,Mossend Surgery,6410,ML4 1DQ,North Lanarkshire
+62031,Bruce Medical Centre,8297,ML4 1QD,North Lanarkshire
+62045,Fullwood Medical Practice,2877,ML1 4LT,North Lanarkshire
+62050,John Street Surgery,7974,ML4 1PS,North Lanarkshire
+62115,Newarthill Medical Practice,3057,ML1 5AG,North Lanarkshire
+62120,Holytown Surgery,3676,ML1 4TH,North Lanarkshire
+62219,High Mill Medical Practice,7464,ML8 4BA,South Lanarkshire
+62223,St Luke's Medical Practice,11227,ML8 4BA,South Lanarkshire
+62312,Biggar Medical Practice,8046,ML12 6BE,South Lanarkshire
+62346,Kingshill Medical Practice,2983,ML11 8AJ,South Lanarkshire
+62510,Douglasdale Medical Practice,5465,ML11 0PX,South Lanarkshire
+62596,Chapelhall Practice,7451,ML6 8SR,North Lanarkshire
+62609,Orchard Medical Centre,12903,ML1 3JX,North Lanarkshire
+62628,Blackwood Medical Practice,3831,ML11 9SB,South Lanarkshire
+62632,Glebe Medical Practice,6440,ML11 0DB,South Lanarkshire
+62666,Willow Wood Medical Practice,3629,ML2 7LP,North Lanarkshire
+62671,Clyde View Medical Practice,8906,ML2 7LP,North Lanarkshire
+62690,Clyde Practice,3049,ML1 1TB,North Lanarkshire
+62717,Dr A Porte & Partners,10037,ML1 2PJ,North Lanarkshire
+62736,Knowetop Medical Practice,4286,ML1 1TB,North Lanarkshire
+62844,Forestbank Medical Partnership,3624,ML7 5QE,North Lanarkshire
+62897,The George Practice,1555,ML7 5DS,North Lanarkshire
+62933,Logan Practice,14228,ML2 7LP,North Lanarkshire
+62967,Branchalwood Medical Practice,6219,ML2 7LP,North Lanarkshire
+62986,Burnbrae Medical Practice,8981,ML7 5DS,North Lanarkshire
+62991,Rosehall Surgery,3755,ML7 4AR,North Lanarkshire
+63033,Calderside Medical Practice,7208,G72 0BS,South Lanarkshire
+63052,Victoria Medical Practice,5429,G72 0BS,South Lanarkshire
+63118,Bothwell Medical Centre,10437,G71 8ET,South Lanarkshire
+63231,Mavor Medical Practice,9698,G74 1AD,South Lanarkshire
+63245,Kirkview Medical Practice,7411,G74 1AD,South Lanarkshire
+63250,Kittoch Medical Practice,7803,G74 1AD,South Lanarkshire
+63264,Caldergreen Medical Practice,13831,G74 1AD,South Lanarkshire
+63283,Kilbryde Medical Practice,3994,G74 1AD,South Lanarkshire
+63301,The Murray Surgery,13347,G75 0RT,South Lanarkshire
+63334,Auchinraith Medical Practice,5728,G72 0BS,South Lanarkshire
+63419,Burnbank Medical Centre,8426,ML3 0NQ,South Lanarkshire
+63423,Portland Park Medical Centre,7035,ML3 7JY,South Lanarkshire
+63438,Wellhall Medical Centre,12200,ML3 9TZ,South Lanarkshire
+63442,Oak Lodge,6992,ML3 7EN,South Lanarkshire
+63457,Douglas Street Surgery,7804,ML3 0DR,South Lanarkshire
+63461,Hamilton West Medical Practice,6602,ML3 9AQ,South Lanarkshire
+63476,Drs Clokey & McShane,5568,ML3 7QQ,South Lanarkshire
+63481,Dr JM Simpson & Partners,8010,ML3 8AA,South Lanarkshire
+63508,Calderlea Surgery,5923,G74 3BE,South Lanarkshire
+63512,Gallowhill Medical Centre,1786,ML9 1EX,South Lanarkshire
+63527,Morgan Glen Surgery,10131,ML9 1RJ,South Lanarkshire
+63546,Macinnes Medical Centre,8914,ML1 5JU,North Lanarkshire
+63616,The Avon Medical Practice,13579,ML9 2BJ,South Lanarkshire
+63724,Alba Medical Group,17980,ML10 6AS,South Lanarkshire
+63739,Avondale Medical Practice,8464,ML10 6AS,South Lanarkshire
+63813,Lincluden Medical Centre,8911,G71 7NE,South Lanarkshire
+63828,Old Mill Surgery,8038,G71 5SU,North Lanarkshire
+63832,The Willow Practice,3130,G71 5RR,North Lanarkshire
+63890,Manse Road Medical Centre,4026,ML2 9AX,North Lanarkshire
+63902,Calder Valley Surgery,2036,ML2 7LP,North Lanarkshire
+63917,Medwyn Medical Practice,5934,ML11 8HJ,South Lanarkshire
+63921,Alba Medical Group - Lanark,12239,ML11 7DH,South Lanarkshire
+65931,Challenging Patients Service,65,G72 0BS,South Lanarkshire
+70075,Braids Medical Practice,10082,EH10 6QT,Edinburgh
+70094,The Green Practice,10499,EH3 6EH,Edinburgh
+70107,Leven Medical Practice,6936,EH3 9QQ,Edinburgh
+70126,Southfield Medical Practice,4776,EH15 3LL,Edinburgh
+70131,Colinton Surgery,12109,EH13 0LB,Edinburgh
+70164,Ferniehill Surgery,6952,EH17 7AB,Edinburgh
+70179,Leith Surgery,12197,EH6 8HQ,Edinburgh
+70198,Niddrie Medical Practice,4865,EH16 4DT,Edinburgh
+70215,Craigmillar Medical Group,11731,EH16 4DT,Edinburgh
+70220,Ladywell Medical Centre (West),10757,EH12 7TB,Edinburgh
+70234,The Long House Surgery,8147,EH5 3EL,Edinburgh
+70253,Whinpark Medical Practice,11752,EH11 3RA,Edinburgh
+70268,Brunton Place Surgery,9896,EH7 5EG,Edinburgh
+70272,Bangholm Medical Centre,11550,EH5 3AH,Edinburgh
+70291,Inchpark Surgery,6030,EH16 5QU,Edinburgh
+70319,West End Medical Practice,11700,EH3 7EB,Edinburgh
+70323,Bruntsfield Medical Practice,12285,EH10 4EY,Edinburgh
+70361,Ladywell Medical Centre (East),10800,EH12 7UN,Edinburgh
+70376,Liberton Medical Group,7659,EH16 6JT,Edinburgh
+70381,Mackenzie Medical Centre,8400,EH8 9DX,Edinburgh
+70408,Dr Thyne & Partners,9460,EH3 6EH,Edinburgh
+70412,Grange Medical Group,7820,EH9 1AG,Edinburgh
+70427,Milton Surgery,7773,EH15 3LL,Edinburgh
+70451,Meadows Medical Practice,6487,EH3 9HW,Edinburgh
+70470,Dalkeith Road Medical Practice,3869,EH8 9RD,Edinburgh
+70499,Annandale Medical Practice,8347,EH7 4AT,Edinburgh
+70501,Murrayfield Medical Practice,7886,EH12 5QX,Edinburgh
+70516,Gracemount Medical Practice,9173,EH16 6RN,Edinburgh
+70521,The Hopetoun Practice,7186,EH7 4AT,Edinburgh
+70535,Blackhall Medical Centre,6762,EH4 3TH,Edinburgh
+70569,Restalrig Park Medical Centre,6196,EH7 6UJ,Edinburgh
+70573,Crewe Medical Centre,10736,EH5 2LY,Edinburgh
+70588,The Southern Medical Group,8328,EH17 7PR,Edinburgh
+70592,University Health Service,24731,EH8 9AL,Edinburgh
+70605,Durham Road Medical Group,6104,EH15 1NY,Edinburgh
+70610,Craiglockhart Medical Group,9955,EH13 9AF,Edinburgh
+70639,Dr A Comiskey and Partners,11893,EH16 5TY,Edinburgh
+70658,Baronscourt Surgery,7481,EH8 7RX,Edinburgh
+70662,Muirhouse Medical Group,19969,EH4 4PL,Edinburgh
+70709,Davidson's Mains Medical Centre,6135,EH4 5BP,Edinburgh
+70747,Summerside Medical Practice,6444,EH6 4NY,Edinburgh
+70785,St Triduana's Medical Practice,12252,EH7 6RU,Edinburgh
+70790,Morningside Medical Practice,9479,EH10 5ER,Edinburgh
+70841,St Leonard's Medical Centre,8487,EH8 9RU,Edinburgh
+70893,Braefoot Medical Practice,7425,EH16 5TY,Edinburgh
+70906,Sighthill Red Medical Practice,3408,EH11 4AU,Edinburgh
+70911,Sighthill Green Medical Practice,10313,EH11 4AU,Edinburgh
+70925,Riccarton General Practice,10751,EH14 4AS,Edinburgh
+70930,The Pentlands Medical Practice,14038,EH14 5QB,Edinburgh
+70963,Edinburgh Access Practice,971,EH1 1NA,Edinburgh
+70978,Wester Hailes Medical Practice,8111,EH14 3JF,Edinburgh
+70982,The Victoria Practice,5862,EH6 5JA,Edinburgh
+70997,Slateford Medical Practice,9714,EH14 1NQ,Edinburgh
+71011,Polwarth Medical Practice,5257,EH3 9QQ,Edinburgh
+71025,Murrayfield Medical Centre,7759,EH12 5SS,Edinburgh
+71082,Springwell Medical Group,11379,EH11 2JL,Edinburgh
+71097,Firrhill Medical Centre,5432,EH13 9AF,Edinburgh
+71114,Leith Mount Surgery,11361,EH6 4EG,Edinburgh
+71129,Cramond Medical Practice,8562,EH4 6NS,Edinburgh
+71171,Challenging Behaviour General Practice,17,EH10 5HF,Edinburgh
+71222,Gilmore Medical Practice,9123,EH3 9QQ,Edinburgh
+71326,The Group Practice - Eyre,10359,EH3 5EU,Edinburgh
+71364,Mill Lane Surgery,6217,EH6 6TL,Edinburgh
+71379,Boroughloch Medical Practice,11164,EH8 9RD,Edinburgh
+71398,Links Medical Centre,7134,EH6 8BW,Edinburgh
+71401,Parkgrove Medical Practice,4287,EH4 7NX,Edinburgh
+71420,Ratho Medical Practice,3182,EH28 8RH,Edinburgh
+71434,Barclay Medical Practice East Craigs,10700,EH12 8XP,Edinburgh
+71449,Hermitage Medical Practice,7637,EH10 4RP,Edinburgh
+76000,Tyne Medical Practice,6957,EH41 3NF,East Lothian
+76029,Gullane Medical Practice,6059,EH31 2HP,East Lothian
+76033,Riverside Medical Practice LLP,20139,EH21 7BP,East Lothian
+76052,The Harbours Medical Practice,9903,EH32 0JU,East Lothian
+76071,Lammermuir Medical Practice,5660,EH41 3NF,East Lothian
+76086,Whitesands Medical Practice,4921,EH42 1EE,East Lothian
+76103,The Orchard Medical Practice,5612,EH41 3NF,East Lothian
+76122,Prestonpans Group Practice,9921,EH32 9QS,East Lothian
+76137,North Berwick Group Practice,9671,EH39 4PU,East Lothian
+76141,Inveresk Medical Practice,11030,EH21 7BP,East Lothian
+76161,Lauderdale Medical Practice,4445,EH42 1EE,East Lothian
+76180,Cromwell Harbour Medical Practice,5076,EH42 1EE,East Lothian
+76194,East Linton Surgery,3150,EH40 3DP,East Lothian
+76211,Ormiston Medical Practice,4408,EH35 5AB,East Lothian
+76226,Tranent Medical Practice,14173,EH33 2JX,East Lothian
+77036,Eastfield Medical Practice,6536,EH26 8EZ,Midlothian
+77055,Dalhousie Medical Practice,9301,EH19 2ET,Midlothian
+77074,Quarryfoot Practice,4994,EH19 2ET,Midlothian
+77093,Roslin Medical Practice,8245,EH25 9NT,Midlothian
+77106,Newbattle Medical Practice,23775,EH22 4AA,Midlothian
+77111,Penicuik Medical Practice,11800,EH26 8LF,Midlothian
+77125,Pathhead Medical Practice,6363,EH37 5PP,Midlothian
+77159,Newbyres Medical Group,8288,EH23 4TP,Midlothian
+77197,Dalkeith Medical Practice,10699,EH22 1AP,Midlothian
+77271,Strathesk Medical Group,8570,EH19 2ET,Midlothian
+77286,Loanhead Medical Practice,6689,EH20 9LA,Midlothian
+78010,Carmondean Medical Group,9964,EH54 8PY,West Lothian
+78024,East Calder Medical Practice,15362,EH53 0EW,West Lothian
+78062,Ferguson Medical Practice,6896,EH52 5LH,West Lothian
+78077,Newland Medical Practice,9293,EH48 2SS,West Lothian
+78113,Linden Medical Practice,6727,EH52 5LH,West Lothian
+78128,Kingsgate Medical Practice,8255,EH48 2SS,West Lothian
+78132,Simpson Medical Group,8653,EH48 2SS,West Lothian
+78147,West Calder Medical Practice,10452,EH55 8EJ,West Lothian
+78166,Linlithgow Group Medical Practice,15702,EH49 7ER,West Lothian
+78171,South Queensferry Medical Practice,13015,EH30 9HA,Edinburgh
+78190,Whitburn Group Medical Practice,12778,EH47 0SD,West Lothian
+78241,Barbauchlaw Medical Practice,17320,EH48 3QB,West Lothian
+78255,Howden Health Centre,12386,EH54 6TP,West Lothian
+78260,Dedridge Medical Group,10838,EH54 6QQ,West Lothian
+78306,The Wood Medical Practice,7697,EH52 5LH,West Lothian
+78311,The Craigshill Partnership,8884,EH54 5DY,West Lothian
+78330,Ashgrove Group Practice,7729,EH47 7LL,West Lothian
+78359,Almond Group Practice,11319,EH29 9AS,West Lothian
+78397,Barclay Medical Practice,12879,EH54 8PY,West Lothian
+78414,Barclay Medical Practice-Fauldhouse,8347,EH47 9JD,West Lothian
+78429,Murieston Medical Practice LLP,6874,EH54 9JZ,West Lothian
+80005,South Beach Medical Centre,8652,KA22 8BS,North Ayrshire
+80010,Central Avenue Surgery,4314,KA22 7DX,North Ayrshire
+80058,Tam's Brig Surgery,7764,KA8 8DD,South Ayrshire
+80062,The Surgery,5216,KA7 2AQ,South Ayrshire
+80077,Dalblair Medical Practice,2307,KA7 1UQ,South Ayrshire
+80081,Barns Medical Practice,10287,KA7 1UL,South Ayrshire
+80096,Racecourse Road Medical Group,8310,KA7 2DF,South Ayrshire
+80109,Cathcart Street Medical Practice,7728,KA7 1BJ,South Ayrshire
+80113,The Fullarton Medical Practice,8347,KA7 1UL,South Ayrshire
+80132,Ballantrae Medical Practice,1562,KA26 0NB,South Ayrshire
+80147,Beith Health Centre GP Practice,5590,KA15 2AE,North Ayrshire
+80166,Crosshouse Medical Practice,3859,KA2 0LE,East Ayrshire
+80171,Tanyard Medical Practice,13771,KA18 1BF,East Ayrshire
+80185,Dailly Medical Practice,1332,KA26 9SH,South Ayrshire
+80202,Dalmellington Health Centre,3597,KA6 7QL,East Ayrshire
+80217,Dalry Medical Practice,6067,KA24 4AF,North Ayrshire
+80255,Dundonald Medical Practice,5570,KA2 9HF,North Ayrshire
+80274,Girvan Riverside Medical Practice,4404,KA26 9HQ,South Ayrshire
+80289,Dr McCulloch & Partners,3563,KA26 9HQ,South Ayrshire
+80306,Bourtreehill Medical Practice,9161,KA11 1JU,North Ayrshire
+80330,Eglinton Family Practice,6584,KA12 8TJ,North Ayrshire
+80344,Townhead Surgery,12207,KA12 0AY,North Ayrshire
+80363,Kilbirnie Medical Practice,7852,KA25 6HS,North Ayrshire
+80378,Marnock Medical Group,18347,KA3 7AE,East Ayrshire
+80397,Holmhead Medical Practice,11021,KA1 2DJ,East Ayrshire
+80400,The Wards Medical Centre,11766,KA1 1RU,East Ayrshire
+80414,The Surgery,8755,KA1 2BD,East Ayrshire
+80467,Carrick Medical Practice,3416,KA19 7BY,South Ayrshire
+80491,Maybole Medical Practice,4220,KA19 7BY,South Ayrshire
+80518,Valley Medical Practice,3783,KA18 4BA,East Ayrshire
+80522,Riverside Medical Practice,4071,KA6 7LX,East Ayrshire
+80537,Station Road Medical Practice,10313,KA9 1AQ,South Ayrshire
+80541,Kirkhall Surgery,7053,KA9 1AW,South Ayrshire
+80556,Saltcoats Group Practice,10152,KA21 5LX,North Ayrshire
+80561,Dr Rai's Practice,3960,PA17 5AR,North Ayrshire
+80594,Stewarton Medical Practice,11084,KA3 5BP,East Ayrshire
+80607,Templehill Surgery,10651,KA10 6BQ,South Ayrshire
+80611,Portland Surgery Troon,7857,KA10 6QR,South Ayrshire
+80679,Cumbrae Medical Practice,1257,KA28 0DE,North Ayrshire
+80698,Frew Terrace Surgery,11591,KA12 9DY,North Ayrshire
+80701,Stevenston Group Practice,4763,KA20 3AB,North Ayrshire
+80720,Taiglum Medical Practice,8968,KA6 7AY,South Ayrshire
+80749,Ballochmyle Medical Group,8772,KA5 6RU,East Ayrshire
+80753,Kilwinning Medical Practice,12274,KA13 6BL,North Ayrshire
+80768,Oxenward Surgery,4463,KA13 6EH,North Ayrshire
+80772,Auchinleck Surgery,3104,KA18 2AY,East Ayrshire
+80787,Loudoun Medical Practice,7057,KA17 0HD,East Ayrshire
+80842,Bankfield Medical Practice,6005,KA7 3PR,South Ayrshire
+80857,Largs Medical Group,13377,KA30 8LH,North Ayrshire
+80861,Challenging Behaviour Service,32,KA6 6AB,North Ayrshire
+80908,Portland Medical Practice,10500,KA1 2DL,East Ayrshire
+80927,Arran Medical Group,5084,KA27 8NS,North Ayrshire
+81012,Ayrshire Medical Group,12616,KA20 3AB,North Ayrshire
+81099,Galston Medical Practice (BMG Galston),6169,KA4 8HW,East Ayrshire
+84006,Dr Lorna M Macgregor & Partner,821,PA38 4DE,Argyll and Bute
+84030,"Drs Lazarus, Norrie, Villalba Munoz, Anderson, McGovern, Cook, Terry & Bartos",6076,PA28 6AT,Argyll and Bute
+84063,The Carradale Surgery,585,PA28 6QG,Argyll and Bute
+84097,Dr C O'Neill,175,PA78 6SY,Argyll and Bute
+84129,Scalasaig Medical Practice,136,PA61 7YW,Argyll and Bute
+84191,Taynuilt Medical Practice,5430,PA37 1PH,Argyll and Bute
+84237,Drs Hall & Brennan,4110,PA23 7HW,Argyll and Bute
+84241,Church Street Surgery,4059,PA23 8BG,Argyll and Bute
+84256,Cowal Medical Practice,2947,PA23 7HW,Argyll and Bute
+84275,Easdale Medical Practice,1049,PA34 4TL,Argyll and Bute
+84307,The Furnace/Inveraray Medical Practice,1192,PA32 8TX,Argyll and Bute
+84364,Islay Medical Practice,3454,PA42 7DR,Argyll and Bute
+84383,Jura Medical Practice,231,PA60 7XG,Argyll and Bute
+84415,Lochgilphead Medical Centre,6702,PA31 8JZ,Argyll and Bute
+84449,Dr P M R Von Kaehne,458,PA24 8AQ,Argyll and Bute
+84538,Mull & Iona Medical Group,3540,PA75 6PN,Argyll and Bute
+84581,Lorn Medical Centre,11568,PA34 4HE,Argyll and Bute
+84646,The Bute Practice,6319,PA20 9JL,Argyll and Bute
+84684,Dr Robert S B Coull,1012,PA27 8BX,Argyll and Bute
+84716,Dr Tittmar and Partner,1531,PA23 8SE,Argyll and Bute
+84740,Tarbert Medical Practice,1781,PA29 6TY,Argyll and Bute
+84773,Dr A MacGregor & Dr N Hallum,1171,PA21 2BE,Argyll and Bute
+84805,Tiree Medical Practice,735,PA77 6UN,Argyll and Bute
+84810,Kintyre Medical Group,1118,PA29 6XD,Argyll and Bute
+85009,Arrochar Surgery,1150,G83 7AE,Argyll and Bute
+85032,Alcluith Practice,2552,G82 1PW,West Dunbartonshire
+85047,The Riverbank Practice,5518,G82 1PW,West Dunbartonshire
+85066,Levenside Medical Practice,8448,G82 1PW,West Dunbartonshire
+85071,Dr J M Mcdevitt & Dr D Neilson,3354,G82 1PW,West Dunbartonshire
+85090,Dr Stephen H Dunn & Partners,4609,G82 1PW,West Dunbartonshire
+85117,Garelochhead Medical Centre,1850,G84 0SL,Argyll and Bute
+85141,Millig Practice,9649,G84 7QL,Argyll and Bute
+85155,Dr McLachlan & Partners,9398,G84 7QL,Argyll and Bute
+85193,Kilcreggan Medical Practice,2471,G84 0JL,Argyll and Bute
+85225,The Lennox Practice,4987,G83 0UA,West Dunbartonshire
+85230,Loch Lomond Surgery,7575,G83 0NB,West Dunbartonshire
+85259,Inchcruin Practice,3721,G83 0UE,West Dunbartonshire
+85403,Oakview Medical Practice,9452,G83 0UE,West Dunbartonshire
+86001,Gourock Medical Practice,7952,PA19 1AQ,Inverclyde
+86177,Ardgowan Medical Practice,9445,PA16 8HW,Inverclyde
+86181,Mount Pleasant Practice,5901,PA15 4DG,Inverclyde
+86196,"Drs Simpson, Luty & Ormond",2852,PA13 4AP,Inverclyde
+86209,The New Surgery,3564,PA13 4LE,Inverclyde
+86228,"Dr Hogan, Allen & Quinn",3327,PA15 4NH,Inverclyde
+86271,The Health Centre,4003,PA14 5EW,Inverclyde
+86285,Drs Macdonald & Mitchell,3876,PA14 5EW,Inverclyde
+86321,Newark Medical Practice,4068,PA14 5EW,Inverclyde
+86336,Port Glasgow Medical Centre,5277,PA14 5UD,Inverclyde
+86341,The Roxburgh Practice,5618,PA15 4DG,Inverclyde
+86360,Lochview Medical Practice,10381,PA15 4NH,Inverclyde
+86374,Cochrane Medical Practice,14749,PA15 4NH,Inverclyde
+87019,Gleniffer Medical Group,9292,G78 1SW,East Renfrewshire
+87023,Neilston Medical Centre,4260,G78 3HJ,East Renfrewshire
+87108,The Oaks Medical Practice,4371,G78 1SW,East Renfrewshire
+87112,Bishopton Medical Practice,11626,PA7 5AW,Renfrewshire
+87146,Strathgryffe Medical Practice,10688,PA6 7AR,Renfrewshire
+87165,Levern Medical Group,8810,G78 1SW,East Renfrewshire
+87184,"Drs Macpherson, Hanley,Tobin , Al-Ani & Mitchell",8903,PA8 7JQ,Renfrewshire
+87235,Bridgewater Medical Centre,2138,PA8 7AF,Renfrewshire
+87292,Ludovic Medical Practice,7769,PA5 8EY,Renfrewshire
+87324,Ravenswood Surgery,6442,PA5 8SU,Renfrewshire
+87339,"Drs Howie, Smith & Dobbs",5575,PA5 8SL,Renfrewshire
+87343,Dr Cassidy & Partners,4787,PA5 8PZ,Renfrewshire
+87358,ALBA Medical Group Glasgow,8114,PA8 6BS,Renfrewshire
+87409,Dr Cooper and Partners,5846,PA3 3DB,Renfrewshire
+87432,Mistylaw Medical Practice,4834,PA12 4AH,Renfrewshire
+87466,The Charleston Surgery,7474,PA2 6LR,Renfrewshire
+87471,Anchor Mill Medical Practice,9165,PA1 1UB,Renfrewshire
+87485,Tannahill Surgery,3303,PA3 1NT,Renfrewshire
+87490,King Street Surgery,9703,PA1 2PS,Renfrewshire
+87502,The Consulting Rooms,7679,PA2 6LW,Renfrewshire
+87517,Glenburn Medical Practice,2972,PA2 8DX,Renfrewshire
+87521,The Kelburn Practice,4668,PA3 4AD,Renfrewshire
+87541,The Greenlaw Practice,8638,PA3 4AD,Renfrewshire
+87555,The Mirin Practice,8852,PA1 3QS,Renfrewshire
+87560,The Love Street Medical Centre,5701,PA3 2DY,Renfrewshire
+87606,The Barony Practice,6628,PA3 4AD,Renfrewshire
+87625,Abbey Medical Centre,11634,PA1 1SU,Renfrewshire
+87697,Braehead Medical Practice,8315,PA4 8RU,Renfrewshire
+87700,Clydeview Medical Practice,10106,PA4 8RU,Renfrewshire
+87714,Kingsinch Medical Practice,6849,PA4 8RU,Renfrewshire
+87729,Westfield Medical Practice,4992,PA5 8PZ,Renfrewshire
+90031,The Group Practice,8080,HS1 2PS,Western Isles
+90098,North Harris Medical Practice,1296,HS3 3BG,Western Isles
+90101,South Harris Medical Practice,556,HS5 3UA,Western Isles
+90115,North Uist Medical Practice,1393,HS6 5AE,Western Isles
+90120,Benbecula Medical Practice,2321,HS7 5QA,Western Isles
+90134,South Uist Medical Practice,983,HS8 5SS,Western Isles
+90149,Barra Medical Practice,1266,HS9 5XD,Western Isles
+90172,Broadbay Medical Practice,5921,HS1 2XB,Western Isles
+90204,Langabhat Medical Practice,5261,HS2 9JP,Western Isles
+25027,Ochil Medical Practice,10524,FK10 3JQ,Clackmannanshire
+25031,The Whins Medical Practice,6845,FK10 3JQ,Clackmannanshire
+25046,Alva Medical Practice,13316,FK12 5BD,Clackmannanshire
+25051,Balfron Health Centre,2988,G63 0TS,Stirling
+25065,Edenkiln Surgery,2500,G63 9EG,Stirling
+25101,Bridge Of Allan Health Centre,7105,FK9 4EU,Stirling
+25121,Callander Medical Practice,4581,FK17 8LX,Stirling
+25135,Clackmannan & Kincardine Medical Practice,6963,FK10 4JA,Clackmannanshire
+25169,Fallin Health Centre,6639,FK7 7JD,Stirling
+25210,Dollar Health Centre,5533,FK14 7AA,Stirling
+25224,Doune Health Centre,4239,FK16 6DU,Stirling
+25243,Dunblane Medical Practice,10810,FK15 9BQ,Stirling
+25347,Killearn Health Centre,4647,G63 9NA,Stirling
+25351,Killin Medical Practice,1569,FK21 8TQ,Stirling
+25366,Kippen Surgery,2383,FK8 3DZ,Stirling
+25506,Park Terrace Medical Practice,7629,FK8 2AU,Stirling
+25525,Orchard House Health Centre,4267,FK8 1PH,Stirling
+25544,Tillicoultry Medical Practice,8489,FK13 6AG,Stirling
+25559,Airthrey Park Medical Centre,8223,FK9 4NJ,Stirling
+25582,Park Avenue Medical Centre,7940,FK8 2AU,Stirling
+25686,Allan Park Medical Practice,3676,FK8 2QD,Stirling
+25737,Viewfield Medical Practice,10741,FK8 2AU,Stirling
+25826,Direct Patient Care Service,32,FK9 4SW,Stirling
+25898,Drymen Health Centre,1557,G63 0DP,Stirling
+25968,Aberfoyle & Buchlyvie Medical Centres,2382,FK8 3NB,Stirling
+25991,Tor Medical Group,3776,FK7 8DW,Stirling
+26015,Alba Medical Group,28932,FK7 0HW,Stirling

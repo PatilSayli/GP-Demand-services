@@ -1,0 +1,153 @@
+Age_Group,Disease,Mean_Prevalence,Max_Prevalence,High_Prevalence_Councils
+Ages0to4,Asthma,289.3234567901235,937.0,9
+Ages0to4,Atrial Fibrillation,0.0,0.0,0
+Ages0to4,Cancer,0.2740740740740741,22.2,1
+Ages0to4,Chronic Kidney Disease (CKD),0.0,0.0,0
+Ages0to4,Chronic Obstructive Pulmonary Disease (COPD),0.19382716049382714,15.7,1
+Ages0to4,Coronary Heart Disease (CHD),0.0,0.0,0
+Ages0to4,Dementia,0.0,0.0,0
+Ages0to4,Depression,0.0,0.0,0
+Ages0to4,Diabetes,0.847530864197531,58.3,2
+Ages0to4,Eating Disorder,0.8006172839506173,46.0,4
+Ages0to4,Epilepsy,31.832098765432093,187.4,9
+Ages0to4,Heart Failure,0.21728395061728398,35.2,1
+Ages0to4,Hypertension,0.0,0.0,0
+Ages0to4,Mental Health,0.0,0.0,0
+Ages0to4,Osteoporosis,0.0,0.0,0
+Ages0to4,Palliative Care,0.0,0.0,0
+Ages0to4,Peripheral Arterial Disease (PAD),0.09691358024691357,15.7,1
+Ages0to4,Rheumatoid Arthritis,0.0,0.0,0
+Ages0to4,Stroke and TIA,0.0,0.0,0
+Ages15to24,Asthma,2152.925925925926,4345.9,7
+Ages15to24,Atrial Fibrillation,0.0,0.0,0
+Ages15to24,Cancer,17.07962962962963,104.7,10
+Ages15to24,Chronic Kidney Disease (CKD),0.046296296296296294,2.5,1
+Ages15to24,Chronic Obstructive Pulmonary Disease (COPD),0.0,0.0,0
+Ages15to24,Coronary Heart Disease (CHD),0.08518518518518518,7.8,2
+Ages15to24,Dementia,0.0,0.0,0
+Ages15to24,Depression,1260.466049382716,4016.7,5
+Ages15to24,Diabetes,228.03086419753086,506.6,5
+Ages15to24,Eating Disorder,202.24629629629626,452.3,12
+Ages15to24,Epilepsy,359.0179012345679,633.2,8
+Ages15to24,Heart Failure,0.06172839506172839,10.0,1
+Ages15to24,Hypertension,15.251851851851853,72.0,9
+Ages15to24,Mental Health,60.790740740740745,219.5,8
+Ages15to24,Osteoporosis,0.0,0.0,0
+Ages15to24,Palliative Care,0.015432098765432098,2.5,1
+Ages15to24,Peripheral Arterial Disease (PAD),0.07654320987654321,6.2,1
+Ages15to24,Rheumatoid Arthritis,0.8351851851851853,21.0,4
+Ages15to24,Stroke and TIA,0.6123456790123456,23.4,4
+Ages25to44,Asthma,2435.482716049383,4395.3,7
+Ages25to44,Atrial Fibrillation,11.79320987654321,46.0,11
+Ages25to44,Cancer,227.06851851851852,383.1,8
+Ages25to44,Chronic Kidney Disease (CKD),16.962962962962962,67.2,12
+Ages25to44,Chronic Obstructive Pulmonary Disease (COPD),30.787654320987652,97.1,7
+Ages25to44,Coronary Heart Disease (CHD),29.596913580246913,105.6,7
+Ages25to44,Dementia,0.0,0.0,0
+Ages25to44,Depression,3945.587037037036,8708.0,5
+Ages25to44,Diabetes,562.6549382716049,963.9,9
+Ages25to44,Eating Disorder,282.9086419753086,522.8,8
+Ages25to44,Epilepsy,524.9907407407406,1008.1,5
+Ages25to44,Heart Failure,5.92530864197531,28.8,8
+Ages25to44,Hypertension,629.5333333333333,1115.6,5
+Ages25to44,Mental Health,363.40370370370374,689.4,7
+Ages25to44,Osteoporosis,0.0,0.0,0
+Ages25to44,Palliative Care,0.7685185185185185,12.5,4
+Ages25to44,Peripheral Arterial Disease (PAD),0.9487654320987654,45.9,5
+Ages25to44,Rheumatoid Arthritis,42.453086419753085,133.5,9
+Ages25to44,Stroke and TIA,32.26666666666667,86.4,9
+Ages45to64,Asthma,3159.9456790123463,4762.8,6
+Ages45to64,Atrial Fibrillation,401.46604938271605,665.7,7
+Ages45to64,Cancer,1448.412962962963,2286.7,3
+Ages45to64,Chronic Kidney Disease (CKD),454.3864197530863,889.5,8
+Ages45to64,Chronic Obstructive Pulmonary Disease (COPD),999.574074074074,2150.4,5
+Ages45to64,Coronary Heart Disease (CHD),1293.9580246913579,2405.9,4
+Ages45to64,Dementia,14.490123456790121,55.9,9
+Ages45to64,Depression,4515.675308641975,8899.1,6
+Ages45to64,Diabetes,2612.381481481482,4176.9,4
+Ages45to64,Eating Disorder,221.2685185185185,472.6,8
+Ages45to64,Epilepsy,651.3481481481481,1180.4,4
+Ages45to64,Heart Failure,193.29999999999998,447.5,5
+Ages45to64,Hypertension,6343.058641975309,9777.1,4
+Ages45to64,Mental Health,574.295061728395,1129.4,5
+Ages45to64,Osteoporosis,12.902469135802468,63.9,9
+Ages45to64,Palliative Care,35.24012345679012,235.0,6
+Ages45to64,Peripheral Arterial Disease (PAD),231.17283950617283,539.1,4
+Ages45to64,Rheumatoid Arthritis,311.97345679012346,523.1,6
+Ages45to64,Stroke and TIA,687.0796296296297,1423.5,4
+Ages5to14,Asthma,1777.0123456790122,3668.0,6
+Ages5to14,Atrial Fibrillation,0.0,0.0,0
+Ages5to14,Cancer,5.527777777777778,95.4,5
+Ages5to14,Chronic Kidney Disease (CKD),0.0,0.0,0
+Ages5to14,Chronic Obstructive Pulmonary Disease (COPD),0.08888888888888889,3.6,1
+Ages5to14,Coronary Heart Disease (CHD),0.0,0.0,0
+Ages5to14,Dementia,0.0,0.0,0
+Ages5to14,Depression,1.9253086419753085,31.1,10
+Ages5to14,Diabetes,74.82777777777777,190.8,9
+Ages5to14,Eating Disorder,9.322222222222221,75.3,11
+Ages5to14,Epilepsy,177.03765432098766,442.9,7
+Ages5to14,Heart Failure,0.0,0.0,0
+Ages5to14,Hypertension,0.15987654320987654,12.7,2
+Ages5to14,Mental Health,0.0,0.0,0
+Ages5to14,Osteoporosis,0.0,0.0,0
+Ages5to14,Palliative Care,0.24506172839506174,30.3,2
+Ages5to14,Peripheral Arterial Disease (PAD),0.0,0.0,0
+Ages5to14,Rheumatoid Arthritis,0.029012345679012348,4.7,1
+Ages5to14,Stroke and TIA,0.4339506172839507,18.3,4
+Ages65to74,Asthma,2908.995679012346,4506.4,6
+Ages65to74,Atrial Fibrillation,1819.5222222222221,2800.2,5
+Ages65to74,Cancer,3781.121604938272,5837.3,3
+Ages65to74,Chronic Kidney Disease (CKD),2417.053086419753,4431.4,6
+Ages65to74,Chronic Obstructive Pulmonary Disease (COPD),2661.766049382716,4968.0,5
+Ages65to74,Coronary Heart Disease (CHD),4054.187654320987,6982.0,4
+Ages65to74,Dementia,318.3666666666666,723.8,7
+Ages65to74,Depression,3116.3969135802463,6782.9,7
+Ages65to74,Diabetes,5004.047530864198,7387.7,6
+Ages65to74,Eating Disorder,35.6925925925926,171.2,7
+Ages65to74,Epilepsy,573.1555555555557,916.6,5
+Ages65to74,Heart Failure,777.9771604938271,1563.2,6
+Ages65to74,Hypertension,14412.209259259262,20967.7,4
+Ages65to74,Mental Health,436.20061728395063,829.5,5
+Ages65to74,Osteoporosis,113.72962962962963,326.9,8
+Ages65to74,Palliative Care,170.71975308641976,595.9,5
+Ages65to74,Peripheral Arterial Disease (PAD),901.4382716049382,1735.4,6
+Ages65to74,Rheumatoid Arthritis,615.3345679012345,1073.7,6
+Ages65to74,Stroke and TIA,2150.367901234568,3959.8,4
+Ages75to84,Asthma,2496.904938271605,4219.4,10
+Ages75to84,Atrial Fibrillation,3994.759259259259,6705.6,6
+Ages75to84,Cancer,5239.688271604939,8135.3,11
+Ages75to84,Chronic Kidney Disease (CKD),6054.703086419752,10667.1,5
+Ages75to84,Chronic Obstructive Pulmonary Disease (COPD),3258.1382716049384,6896.0,5
+Ages75to84,Coronary Heart Disease (CHD),6264.208024691357,10936.4,4
+Ages75to84,Dementia,1697.7524691358026,2889.1,7
+Ages75to84,Depression,2081.2993827160494,4534.4,9
+Ages75to84,Diabetes,5607.211728395061,8521.7,7
+Ages75to84,Eating Disorder,1.3796296296296295,35.7,7
+Ages75to84,Epilepsy,490.4395061728395,959.1,5
+Ages75to84,Heart Failure,1600.587037037037,3101.0,5
+Ages75to84,Hypertension,17960.5012345679,26233.5,6
+Ages75to84,Mental Health,308.90308641975304,677.7,7
+Ages75to84,Osteoporosis,652.7444444444444,1650.5,7
+Ages75to84,Palliative Care,428.88518518518526,1619.3,6
+Ages75to84,Peripheral Arterial Disease (PAD),1323.7654320987654,2380.1,6
+Ages75to84,Rheumatoid Arthritis,682.5049382716049,1259.6,10
+Ages75to84,Stroke and TIA,3804.6629629629624,6610.5,4
+Ages85plus,Asthma,2175.0333333333333,4198.5,6
+Ages85plus,Atrial Fibrillation,6838.527160493826,11654.5,7
+Ages85plus,Cancer,5829.8413580246915,9207.5,9
+Ages85plus,Chronic Kidney Disease (CKD),11693.41913580247,20432.6,5
+Ages85plus,Chronic Obstructive Pulmonary Disease (COPD),2765.6746913580246,5570.2,5
+Ages85plus,Coronary Heart Disease (CHD),8598.522839506173,13842.2,3
+Ages85plus,Dementia,5076.356172839506,8676.8,7
+Ages85plus,Depression,1807.230864197531,4071.2,6
+Ages85plus,Diabetes,5304.256172839506,8588.8,6
+Ages85plus,Eating Disorder,0.1308641975308642,21.2,1
+Ages85plus,Epilepsy,384.73765432098764,853.2,11
+Ages85plus,Heart Failure,3054.8753086419756,6740.6,5
+Ages85plus,Hypertension,21526.51975308642,30729.9,6
+Ages85plus,Mental Health,242.29506172839507,726.7,10
+Ages85plus,Osteoporosis,1259.9839506172839,3382.0,6
+Ages85plus,Palliative Care,1416.577777777778,4962.0,5
+Ages85plus,Peripheral Arterial Disease (PAD),1530.6666666666667,2919.7,6
+Ages85plus,Rheumatoid Arthritis,599.9913580246914,2559.7,5
+Ages85plus,Stroke and TIA,6275.587654320987,10966.9,6
