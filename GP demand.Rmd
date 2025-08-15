@@ -1,0 +1,710 @@
+---
+title: "GP-Demand"
+output: pdf_document
+date: "2025-08-14"
+---
+
+```{r}
+#HSCP (Health and Social Care Partnership) & HB (Health Board) Data
+hscp_df <- read.csv("hscp16_hscp19.csv")
+hb_df <- read.csv("hb14_hb19.csv")
+
+```
+
+
+
+```{r}
+#load dataset GP Practices Contact Details
+gp_practices_contact_details_df <- read.csv("practice_contactdetails_oct2024-open-data.csv")
+#View(gp_practices_contact_details_df)
+```
+
+
+```{r}
+#GP Contact Details
+gp_contact_details_df <- read.csv("gp_contactdetails_oct2024-open-data.csv")
+View(gp_contact_details_df)
+```
+
+
+```{r}
+#GP practice list size
+gp_practices_list_sizes_df <- read.csv("practice_listsizes_oct2024-open-data.csv")
+#View(gp_practices_list_sizes_df)
+
+```
+
+```{r}
+# Load dataset Disease Prevalence by GP Practice
+library(readxl)
+
+disease_prevalence_gp_practice_df <- read_excel("diseaseprevalence_practice_total.xlsx", sheet = "DP_Practice_total")
+
+#View(disease_prevalence_gp_practice_df )
+```
+
+
+
+```{r}
+
+# Load dataset GP Activity by HB
+library(readxl)
+
+gp_activity_hb_df <- read_excel("data-may2025.xlsx", sheet = "tab6final")
+#View(gp_activity_hb_df)
+
+```
+
+
+```{r}
+#Hospital Activity Data
+
+diagnosis_codes_df <- read.csv("diagnosis_codes.csv")
+View(diagnosis_codes_df)
+
+```
+
+
+```{r}
+library(readxl)
+
+hospital_activity_by_council_2019_20_df <- read_excel(
+  "table-6-main-diagnosis-by-council-area-2023-24.xlsx",
+  sheet = "Data1",
+  na = c("NA", "")
+)
+
+
+hospital_activity_by_council_2020_21_df <- read_excel(
+  "table-6-main-diagnosis-by-council-area-2023-24.xlsx",
+  sheet = "Data2",
+  na = c("NA", "")
+)
+
+hospital_activity_by_council_2021_22_df <- read_excel(
+  "table-6-main-diagnosis-by-council-area-2023-24.xlsx",
+  sheet = "Data3",
+  na = c("NA", "")
+)
+
+hospital_activity_by_council_2022_23_df <- read_excel(
+  "table-6-main-diagnosis-by-council-area-2023-24.xlsx",
+  sheet = "Data4",
+  na = c("NA", "")
+)
+
+hospital_activity_by_council_2023_24_df <- read_excel(
+  "table-6-main-diagnosis-by-council-area-2023-24.xlsx",
+  sheet = "Data5",
+  na = c("NA", "")
+)
+
+```
+
+
+```{r}
+#The data in Hopsital activity is a look up file..we have separated the data into distinct columns
+
+ha_19_20 <- read.csv('hospital_activity_2019_20.csv')
+ha_20_21 <- read.csv('hospital_activity_2020_21.csv')
+ha_21_22 <- read.csv('hospital_activity_2021_22.csv')
+ha_22_23 <- read.csv('hospital_activity_2022_23.csv')
+ha_23_24<- read.csv('hospital_activity_2023_24.csv')
+
+```
+
+
+```{r}
+#-------------------------------------------------------------------------------------------
+# 2.Data Cleaning
+#-----------------------------------------------------------------------------------------------
+
+library(dplyr)
+
+gp_practices_contact_details_df <- read.csv("practice_contactdetails_oct2024-open-data.csv")
+
+gp_practices_relevant_columns <- gp_practices_contact_details_df[, c(
+  'PracticeCode', 'GPPracticeName', 'PracticeListSize', 'AddressLine4',
+  'Postcode', 'HSCP'
+)]
+
+gp_practices_hspc_combined <- gp_practices_contact_details_df %>%
+  left_join(hscp_df, by = "HSCP") %>%       # merge with hscp_df on HSCP
+  select(PracticeCode, GPPracticeName, PracticeListSize, Postcode, HSCPName, AddressLine4) %>%  
+  rename(Geography = HSCPName)             # rename HSCPName to Geography
+
+View(gp_practices_hspc_combined)
+
+```
+
+
+```{r}
+library(dplyr)
+
+# Function equivalent to assign_split_geography in Python
+assign_split_geography <- function(addr) {
+  if (is.character(addr) && tolower(trimws(addr)) %in% c("clackmannanshire", "sauchie")) {
+    return("Clackmannanshire")
+  } else {
+    return("Stirling")
+  }
+}
+
+# Filter rows to split
+rows_to_split <- gp_practices_hspc_combined %>%
+  filter(Geography == "Clackmannanshire and Stirling")
+
+
+rows_to_split <- rows_to_split %>%
+  mutate(Geography = as.character(sapply(AddressLine4, assign_split_geography)))
+
+
+# Replace old combined rows with updated split ones
+gp_practices_hspc_combined <- gp_practices_hspc_combined %>%
+  filter(Geography != "Clackmannanshire and Stirling") %>%
+  bind_rows(rows_to_split)
+
+write.csv(gp_practices_hspc_combined, "gp_practices.csv", row.names = FALSE)
+
+
+```
+
+```{r}
+
+gp_relevent_columns<-gp_contact_details_df
+
+```
+
+
+```{r}
+#gp_practices_list_sizes_df 
+
+gp_list_sizes <- gp_practices_list_sizes_df[, c(
+  'PracticeCode', 'Sex', 'AllAges', 'Ages0to4', 'Ages5to14', 'Ages15to24',
+  'Ages25to44', 'Ages45to64', 'Ages65to74', 'Ages75to84', 'Ages85plus'
+)]
+
+#View(gp_list_sizes)
+
+library(tidyr)
+
+gp_long <- gp_list_sizes %>%
+  pivot_longer(
+    cols = -c(PracticeCode, Sex),   # All columns except these
+    names_to = "AgeGroup",          # New column for former headers
+    values_to = "Count"              # New column for values
+  )
+
+#View(gp_long)
+
+write.csv(gp_long,"gp_list_sizes.csv", row.names = FALSE)
+
+```
+
+
+```{r}
+# 04. Disease Prevalence by GP Practice
+unique(disease_prevalence_gp_practice_df$Age)
+
+age_mapping <- c(
+  'All' = 'AllAges',
+  '00-04' = 'Ages0to4',
+  '05-09' = 'Ages5to14', '10-14' = 'Ages5to14',
+  '15-19' = 'Ages15to24', '20-24' = 'Ages15to24',
+  '25-29' = 'Ages25to44', '30-34' = 'Ages25to44', '35-39' = 'Ages25to44', '40-44' = 'Ages25to44',
+  '45-49' = 'Ages45to64', '50-54' = 'Ages45to64', '55-59' = 'Ages45to64', '60-64' = 'Ages45to64',
+  '65-69' = 'Ages65to74', '70-74' = 'Ages65to74',
+  '75-79' = 'Ages75to84', '80-84' = 'Ages75to84',
+  '85plus' = 'Ages85plus'
+)
+
+
+disease_prevalence_gp_practice_df$Age_Group <- age_mapping[disease_prevalence_gp_practice_df$Age]
+
+```
+
+
+```{r}
+
+
+library(dplyr)
+
+disease_prevalence_relevant_columns <- disease_prevalence_gp_practice_df %>%
+  select(
+    PracticeCode, Year, Age, Age_Group,
+    PatientCount_Asthma, `PatientCount_Atrial Fibrillation`,
+    PatientCount_Cancer, `PatientCount_Chronic Kidney Disease (CKD)`,
+    `PatientCount_Chronic Obstructive Pulmonary Disease (COPD)`,
+    `PatientCount_Coronary Heart Disease (CHD)`, PatientCount_Dementia,
+    PatientCount_Depression, PatientCount_Diabetes,
+    `PatientCount_Eating Disorder`, PatientCount_Epilepsy,
+    `PatientCount_Heart Failure`, PatientCount_Hypertension,
+    `PatientCount_Mental Health`, PatientCount_Osteoporosis,
+    `PatientCount_Palliative Care`,
+    `PatientCount_Peripheral Arterial Disease (PAD)`,
+    `PatientCount_Rheumatoid Arthritis`, `PatientCount_Stroke and TIA`,
+    Change_Asthma, `Change_Atrial Fibrillation`, Change_Cancer,
+    `Change_Chronic Kidney Disease (CKD)`,
+    `Change_Chronic Obstructive Pulmonary Disease (COPD)`,
+    `Change_Coronary Heart Disease (CHD)`, Change_Dementia,
+    Change_Depression, Change_Diabetes, `Change_Eating Disorder`,
+    Change_Epilepsy, `Change_Heart Failure`, Change_Hypertension,
+    `Change_Mental Health`, Change_Osteoporosis, `Change_Palliative Care`,
+    `Change_Peripheral Arterial Disease (PAD)`,
+    `Change_Rheumatoid Arthritis`, `Change_Stroke and TIA`,
+    Rate_Asthma, `Rate_Atrial Fibrillation`, Rate_Cancer,
+    `Rate_Chronic Kidney Disease (CKD)`,
+    `Rate_Chronic Obstructive Pulmonary Disease (COPD)`,
+    `Rate_Coronary Heart Disease (CHD)`, Rate_Dementia, Rate_Depression,
+    Rate_Diabetes, `Rate_Eating Disorder`, Rate_Epilepsy,
+    `Rate_Heart Failure`, Rate_Hypertension, `Rate_Mental Health`,
+    Rate_Osteoporosis, `Rate_Palliative Care`,
+    `Rate_Peripheral Arterial Disease (PAD)`, `Rate_Rheumatoid Arthritis`,
+    `Rate_Stroke and TIA`
+  )
+
+
+# Select columns starting with PatientCount_, Change_, or Rate_
+disease_cols <- grep("^(PatientCount_|Change_|Rate_)", names(disease_prevalence_relevant_columns), value = TRUE)
+
+# Remove the prefixes to get disease names
+diseases <- sort(unique(gsub("^(PatientCount_|Change_|Rate_)", "", disease_cols)))
+
+# Print diseases and count
+diseases
+
+
+
+
+```
+
+
+```{r}
+library(dplyr)
+library(tidyr)
+
+# Assume your dataframe is disease_prevalence_relevant_columns
+meta_cols <- c("PracticeCode", "Year", "Age", "Age_Group")
+
+# Get disease names
+disease_cols <- grep("^(PatientCount_|Change_|Rate_)", names(disease_prevalence_relevant_columns), value = TRUE)
+diseases <- sort(unique(gsub("^(PatientCount_|Change_|Rate_)", "", disease_cols)))
+
+# Pivot longer: create a row per disease, storing PatientCount, Change, Rate in separate columns
+df_melted <- disease_prevalence_relevant_columns %>%
+  pivot_longer(
+    cols = starts_with(c("PatientCount_", "Change_", "Rate_")),
+    names_to = c(".value", "Disease"),
+    names_pattern = "(PatientCount|Change|Rate)_(.+)"
+  )
+
+View(df_melted)
+# df_melted now has columns: PracticeCode, Year, Age, Age_Group, Disease, PatientCount, Change, Rate
+```
+
+```{r}
+library(dplyr)
+library(stringr)
+library(readr)
+
+# Function to process hospital activity data
+process_hospital_activity_df <- function(df, lookup_col = "lookup") {
+  df %>%
+    mutate(
+      Year = str_sub(!!sym(lookup_col), 1, 7),
+      !!lookup_col := str_sub(!!sym(lookup_col), 8),
+      !!lookup_col := ifelse(str_starts(!!sym(lookup_col), "p"),
+                             str_sub(!!sym(lookup_col), 2),
+                             !!sym(lookup_col)),
+      Geography = case_when(
+        str_starts(!!sym(lookup_col), "All Scottish and Non-Scottish Residents") ~ "Scotland",
+        TRUE ~ str_extract(!!sym(lookup_col), ".*?(Male|Female|All)")
+      ),
+      !!lookup_col := str_trim(str_replace(!!sym(lookup_col), Geography, "")),
+      Gender = str_trim(str_remove(str_extract(!!sym(lookup_col), ".*?-?"), "Sexes|-")),
+      !!lookup_col := str_trim(str_replace(!!sym(lookup_col), str_extract(!!sym(lookup_col), ".*?-?"), "")),
+      Age = case_when(
+        str_starts(str_to_lower(!!sym(lookup_col)), "all ages") ~ "All",
+        str_detect(!!sym(lookup_col), "years") ~ str_extract(!!sym(lookup_col), "^[^y]+"),
+        TRUE ~ !!sym(lookup_col)
+      ),
+      Condition = str_trim(str_replace(!!sym(lookup_col), Age, ""))
+    ) %>%
+    select(Year, Geography, Gender, Age, Condition, 
+           stays_Number, stays_Rate, los_stays_Number, los_stays_Rate, avlos_stays_Rate)
+}
+
+# List of datasets
+datasets <- list(
+  "2019_20" = hospital_activity_by_council_2019_20_df,
+  "2020_21" = hospital_activity_by_council_2020_21_df,
+  "2021_22" = hospital_activity_by_council_2021_22_df,
+  "2022_23" = hospital_activity_by_council_2022_23_df,
+  "2023_24" = hospital_activity_by_council_2023_24_df
+)
+
+# Process all datasets and store in a new list
+hospital_activity_processed <- lapply(datasets, process_hospital_activity_df)
+
+# Access individual years like:
+# hospital_activity_processed[["2019_20"]]
+
+```
+
+
+
+
+```{r}
+library(dplyr)
+
+# 1. NHS Board to Local Area mapping
+nhs_board_to_laa_mapping <- list(
+  "NHS Ayrshire and Arran" = c("East Ayrshire", "North Ayrshire", "South Ayrshire"),
+  "NHS Borders" = c("Scottish Borders"),
+  "NHS Dumfries and Galloway" = c("Dumfries and Galloway"),
+  "NHS Fife" = c("Fife"),
+  "NHS Forth Valley" = c("Clackmannanshire and Stirling", "Falkirk"),
+  "NHS Grampian" = c("Aberdeen City", "Aberdeenshire", "Moray"),
+  "NHS Greater Glasgow and Clyde" = c(
+    "East Dunbartonshire", "East Renfrewshire", "Glasgow City",
+    "Inverclyde", "Renfrewshire", "West Dunbartonshire"
+  ),
+  "NHS Highland" = c("Highland", "Argyll and Bute"),
+  "NHS Lanarkshire" = c("North Lanarkshire", "South Lanarkshire"),
+  "NHS Lothian" = c("Edinburgh", "East Lothian", "Midlothian", "West Lothian"),
+  "NHS Orkney" = c("Orkney Islands"),
+  "NHS Shetland" = c("Shetland Islands"),
+  "NHS Tayside" = c("Angus", "Dundee City", "Perth and Kinross"),
+  "NHS Western Isles" = c("Western Isles"),
+  "Scotland" = character(0)
+)
+
+# 2. Define age mapping
+age_mapping <- c(
+  "All" = "AllAges",
+  "0-4" = "Ages0to4",
+  "5-9" = "Ages5to14",
+  "10-14" = "Ages5to14",
+  "15-19" = "Ages15to24",
+  "20-24" = "Ages15to24",
+  "25-29" = "Ages25to44",
+  "30-34" = "Ages25to44",
+  "35-39" = "Ages25to44",
+  "40-44" = "Ages25to44",
+  "45-49" = "Ages45to64",
+  "50-54" = "Ages45to64",
+  "55-59" = "Ages45to64",
+  "60-64" = "Ages45to64",
+  "65-69" = "Ages65to74",
+  "70-74" = "Ages65to74",
+  "75-79" = "Ages75to84",
+  "80-84" = "Ages75to84",
+  "85+" = "Ages85plus",
+  "85-89" = "Ages85plus",
+  "90+" = "Ages85plus",
+  "65+" = "Special_65plus",
+  "75+" = "Special_75plus",
+  "<18" = "Special_Under18"
+)
+
+# 3. Function to add Age_Group column
+add_age_group_column <- function(df) {
+  df %>%
+    mutate(Age_Group = recode(Age, !!!age_mapping, .default = "Unknown"))
+}
+
+# 4. Apply function to all datasets
+datasets <- list(
+  "2019_20" = hospital_activity_by_council_2019_20_df,
+  "2020_21" = hospital_activity_by_council_2020_21_df,
+  "2021_22" = hospital_activity_by_council_2021_22_df,
+  "2022_23" = hospital_activity_by_council_2022_23_df,
+  "2023_24" = hospital_activity_by_council_2023_24_df
+)
+
+datasets <- lapply(datasets, add_age_group_column)
+
+# 5. Save datasets as CSVs
+for (year in names(datasets)) {
+  write.csv(datasets[[year]], paste0("hospital_activity_", year, ".csv"), row.names = FALSE)
+}
+```
+
+
+
+
+```{r}
+library(dplyr)
+library(stringr)
+library(readr)
+
+# Age mapping
+age_mapping <- c(
+  "All" = "AllAges",
+  "0-4" = "Ages0to4",
+  "5-9" = "Ages5to14",
+  "10-14" = "Ages5to14",
+  "15-19" = "Ages15to24",
+  "20-24" = "Ages15to24",
+  "25-29" = "Ages25to44",
+  "30-34" = "Ages25to44",
+  "35-39" = "Ages25to44",
+  "40-44" = "Ages25to44",
+  "45-49" = "Ages45to64",
+  "50-54" = "Ages45to64",
+  "55-59" = "Ages45to64",
+  "60-64" = "Ages45to64",
+  "65-69" = "Ages65to74",
+  "70-74" = "Ages65to74",
+  "75-79" = "Ages75to84",
+  "80-84" = "Ages75to84",
+  "85+" = "Ages85plus",
+  "85-89" = "Ages85plus",
+  "90+" = "Ages85plus",
+  "65+" = "Special_65plus",
+  "75+" = "Special_75plus",
+  "<18" = "Special_Under18"
+)
+
+# Function to process a dataset and add Age_Group
+process_hospital_activity <- function(df, lookup_col = "lookup") {
+  df %>%
+    mutate(
+      Year = str_sub(!!sym(lookup_col), 1, 7),
+      !!lookup_col := str_sub(!!sym(lookup_col), 8),
+      !!lookup_col := ifelse(str_starts(!!sym(lookup_col), "p"),
+                             str_sub(!!sym(lookup_col), 2),
+                             !!sym(lookup_col)),
+      Geography = case_when(
+        str_starts(!!sym(lookup_col), "All Scottish and Non-Scottish Residents") ~ "Scotland",
+        TRUE ~ str_extract(!!sym(lookup_col), ".*?(Male|Female|All)")
+      ),
+      !!lookup_col := str_trim(str_replace(!!sym(lookup_col), Geography, "")),
+      Gender = str_trim(str_remove(str_extract(!!sym(lookup_col), ".*?-?"), "Sexes|-")),
+      !!lookup_col := str_trim(str_replace(!!sym(lookup_col), str_extract(!!sym(lookup_col), ".*?-?"), "")),
+      Age = case_when(
+        str_starts(str_to_lower(!!sym(lookup_col)), "all ages") ~ "All",
+        str_detect(!!sym(lookup_col), "years") ~ str_extract(!!sym(lookup_col), "^[^y]+"),
+        TRUE ~ !!sym(lookup_col)
+      ),
+      Condition = str_trim(str_replace(!!sym(lookup_col), Age, "")),
+      Age_Group = recode(Age, !!!age_mapping, .default = "Unknown")
+    ) %>%
+    select(Year, Geography, Gender, Age, Age_Group, Condition, 
+           stays_Number, stays_Rate, los_stays_Number, los_stays_Rate, avlos_stays_Rate)
+}
+
+# List of datasets
+datasets <- list(
+  "2019_20" = hospital_activity_by_council_2019_20_df,
+  "2020_21" = hospital_activity_by_council_2020_21_df,
+  "2021_22" = hospital_activity_by_council_2021_22_df,
+  "2022_23" = hospital_activity_by_council_2022_23_df,
+  "2023_24" = hospital_activity_by_council_2023_24_df
+)
+
+# Process all datasets in one go
+hospital_activity_processed <- lapply(datasets, process_hospital_activity)
+
+# Optional: save all datasets to CSVs (single loop)
+walk2(hospital_activity_processed, names(hospital_activity_processed), 
+      ~ write_csv(.x, paste0("hospital_activity_", .y, ".csv")))
+```
+
+
+
+```{r}
+# Load required libraries
+library(tidyverse)
+library(sf)
+library(ggplot2)
+library(ggthemes)
+library(viridis)
+library(lubridate)
+library(forecast)
+library(corrplot)
+
+## 1. GP Practice Landscape Analysis
+
+# Load GP practice data
+gp_practices <- read_csv("gp_practices.csv")
+gps <- read_csv("gps.csv")
+
+# Remove duplicates
+gp_practices <- distinct(gp_practices)
+gps <- distinct(gps)
+
+# Load Scotland geographic data
+scotland_geo <- st_read("lad.json")
+
+# Standardize geography names
+geo_mapping <- c("Edinburgh" = "City of Edinburgh", "Western Isles" = "Eilean Siar")
+gp_practices <- gp_practices %>%
+  mutate(Geography = recode(Geography, !!!geo_mapping))
+
+# Aggregate GP statistics by region
+geo_stats <- gp_practices %>%
+  group_by(Geography) %>%
+  summarise(
+    total_gp_practices = n(),
+    total_list_size = sum(PracticeListSize)
+  ) %>%
+  mutate(gp_practice_per_100000 = round(total_gp_practices * 100000 / total_list_size, 1))
+
+# Merge with geographic data
+gp_practices_geo <- scotland_geo %>%
+  left_join(geo_stats, by = c("LAD13NM" = "Geography"))
+
+# Plot choropleth of GP practices
+ggplot(gp_practices_geo) +
+  geom_sf(aes(fill = total_gp_practices), color = "white", size = 0.2) +
+  scale_fill_viridis_c(option = "plasma", name = "Number of GP Practices") +
+  labs(title = "Number of GP Practices per Scottish Local Authority") +
+  theme_map() +
+  theme(legend.position = "bottom")
+
+## 2. Patient Demographics Analysis
+
+# Load patient list size data
+gp_list_sizes <- read_csv("gp_list_sizes.csv") %>%
+  filter(AgeGroup != "AllAges")
+
+# Merge with geography
+patients_geo <- gp_list_sizes %>%
+  left_join(select(gp_practices, PracticeCode, Geography), by = "PracticeCode")
+
+# Calculate age distribution by geography
+geo_age_perc <- patients_geo %>%
+  group_by(Geography, AgeGroup) %>%
+  summarise(Count = sum(Count)) %>%
+  group_by(Geography) %>%
+  mutate(Percent = Count / sum(Count) * 100)
+
+# Heatmap of age distribution
+ggplot(geo_age_perc, aes(x = AgeGroup, y = Geography, fill = Percent)) +
+  geom_tile() +
+  scale_fill_viridis_c() +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  labs(title = "Patient Age Distribution by Geography")
+
+## 3. Healthcare Activity Patterns
+
+# Load GP activity data
+gp_activity <- read_csv("gp_activity.csv") %>%
+  mutate(MonthYear = as_date(MonthYear))
+
+# Time series forecasting by geography
+forecast_list <- list()
+
+for(geo in unique(gp_activity$Geography)) {
+  geo_data <- gp_activity %>%
+    filter(Geography == geo) %>%
+    group_by(MonthYear) %>%
+    summarise(Count = sum(Count))
+  
+  # Convert to time series
+  ts_data <- ts(geo_data$Count, frequency = 12, start = c(year(min(geo_data$MonthYear)), month(min(geo_data$MonthYear))))
+  
+  # Fit ETS model
+  fit <- ets(ts_data)
+  forecast_val <- forecast(fit, h = 12)
+  
+  # Create forecast dataframe
+  forecast_df <- data.frame(
+    MonthYear = seq(max(geo_data$MonthYear) + months(1), by = "month", length.out = 12),
+    Geography = geo,
+    Forecasted_Count = as.numeric(forecast_val$mean)
+  )
+  
+  forecast_list[[geo]] <- forecast_df
+}
+
+# Combine forecasts
+forecast_all <- bind_rows(forecast_list)
+
+# Plot forecasts for selected regions
+selected_regions <- c("City of Edinburgh", "Glasgow City", "Highland")
+gp_activity %>%
+  filter(Geography %in% selected_regions) %>%
+  group_by(MonthYear, Geography) %>%
+  summarise(Count = sum(Count)) %>%
+  ggplot(aes(x = MonthYear, y = Count)) +
+  geom_line() +
+  geom_line(data = filter(forecast_all, Geography %in% selected_regions), 
+            aes(y = Forecasted_Count), color = "red") +
+  facet_wrap(~Geography, scales = "free_y") +
+  labs(title = "GP Activity with 12-Month Forecast") +
+  theme_minimal()
+
+## 4. Hospital Activity Patterns
+
+# Load and combine hospital activity data
+hospital_files <- list.files("hospital_activity_.*\\.csv", full.names = TRUE)
+hospital_data <- map_dfr(hospital_files, read_csv)
+
+# Clean and standardize data
+hospital_data <- hospital_data %>%
+  mutate(
+    Geography = recode( Geography,
+      "Argyll & Bute" = "Argyll and Bute",
+      "Dumfries & Galloway" = "Dumfries and Galloway",
+      "Perth & Kinross" = "Perth and Kinross",
+      "Na h-Eileanan Siar" = "Eilean Siar"
+    ),
+    Year = case_when(
+      Year == "2019/20" ~ 1,
+      Year == "2020/21" ~ 2,
+      Year == "2021/22" ~ 3,
+      Year == "2022/23" ~ 4,
+      Year == "2023/24" ~ 5
+    )
+  ) %>%
+  filter(Gender != "All", !Age_Group %in% c("Special_Under18", "Special_75plus", "Special_65plus", "AllAges"))
+
+# Map conditions to parent categories (simplified version)
+condition_mapping <- list(
+  "Asthma" = "Asthma",
+  "Chronic Obstructive Pulmonary Disease (COPD)" = "COPD",
+  "Atrial fibrillation and flutter" = "Atrial Fibrillation",
+  "Ischaemic heart disease" = "Coronary Heart Disease",
+  "Heart failure" = "Heart Failure",
+  "Hypertensive diseases" = "Hypertension",
+  "Stroke" = "Stroke",
+  "Type 2 diabetes mellitus" = "Diabetes",
+  "Dementia" = "Dementia",
+  "Rheumatoid arthritis" = "Rheumatoid Arthritis"
+)
+
+# Apply mapping and aggregate
+hospital_agg <- hospital_data %>%
+  mutate(Parent_Condition = recode(Condition, !!!condition_mapping, .default = "Other")) %>%
+  group_by(Year, Geography, Gender, Age_Group, Parent_Condition) %>%
+  summarise(
+    stays_Number = sum(stays_Number),
+    stays_Rate = sum(stays_Rate),
+    .groups = "drop"
+  )
+
+# Plot stays rate by condition
+hospital_agg %>%
+  filter(Parent_Condition != "Other") %>%
+  group_by(Parent_Condition, Year) %>%
+  summarise(avg_rate = mean(stays_Rate)) %>%
+  ggplot(aes(x = Year, y = avg_rate, color = Parent_Condition)) +
+  geom_line() +
+  labs(title = "Hospital Stays Rate by Condition Over Time",
+       y = "Average Stays per 100,000") +
+  theme_minimal() +
+  theme(legend.position = "bottom")
+
+# Correlation matrix of conditions
+corr_data <- hospital_agg %>%
+  select(Geography, Age_Group, Parent_Condition, stays_Rate) %>%
+  pivot_wider(names_from = Parent_Condition, values_from = stays_Rate, values_fill = 0)
+
+corr_matrix <- cor(select(corr_data, -Geography, -Age_Group))
+corrplot(corr_matrix, method = "color", type = "upper", tl.col = "black")
+
+
+```
