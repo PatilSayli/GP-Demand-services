@@ -6,3 +6,12 @@ venv/
 
 # Python cache 
 __pycache__/
+
+
+# Auxiliary tex files in report
+*.aux
+*.log
+*.out
+*.toc
+*.bbl
+*.blg

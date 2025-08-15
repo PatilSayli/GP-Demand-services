@@ -1,0 +1,40 @@
+\begin{titlepage}
+    \begin{tikzpicture}
+        \node[inner sep=0pt] (logo) at (0, 25pt)
+            {\includegraphics[width=.25\textwidth]{figures/general/uoe.png}};
+            
+        \node[text width = 0.5\textwidth, right = of logo, yshift=20pt](title){\sffamily\huge\reporttitle};
+        
+        \node[text width = 0.5\textwidth, yshift=25pt, below = of title](subtitle){\sffamily\Large \reportsubtitle};
+        
+        \gettikzxy{(subtitle.south)}{\sffamily\subtitlex}{\subtitley}
+        \gettikzxy{(title.north)}{\titlex}{\titley}
+        \draw[line width=1mm, Tue-red]($(logo.east)!0.5!(title.west)$) +(0,\subtitley-35) -- +(0,\titley-35);
+    \end{tikzpicture}
+    \vspace{4em}
+    
+    \centering
+    
+    \sffamily\textbf{Report By}
+    
+    <Your Name>
+    
+    \vspace{2em}
+    
+    \sffamily\textbf{Supervised By}
+    
+    \sffamily \grouptutor
+    
+    \vspace{2em}
+    
+    \sffamily\textbf{August 2025}
+    
+    \vfill % Push everything above up and everything below down
+    
+    % Full-bleed cover image using tikz overlay
+    \tikz[remember picture,overlay]{
+        \node[anchor=center,inner sep=0pt,outer sep=0pt] at ($(current page.south west)!0.5!(current page.south east) + (0,0.2\paperheight)$) {%
+            \includegraphics[width=\paperwidth,height=0.4\paperheight,keepaspectratio=false]{figures/general/cover.jpg}%
+        };
+    }
+\end{titlepage}

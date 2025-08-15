@@ -1,1 +1,35 @@
-Basic tex file which will eventually be the report!
+\documentclass[a4paper, table]{article}
+
+\input{general/preamble.tex}
+\input{general/settings.tex}
+
+
+\begin{document}
+
+\input{chapters/frontpage.tex}
+\input{chapters/declaration.tex}
+\input{chapters/0_Executive_summary.tex}
+
+{\hypersetup{linkcolor=black}
+    \tableofcontents
+}
+\newpage
+
+\input{chapters/1_Introduction.tex} 
+\input{chapters/2_Background.tex}
+\input{chapters/3_Experimental_Design_and_data.tex}
+\input{chapters/4_Methodology.tex}
+\input{chapters/5_Results.tex}
+\input{chapters/6_Conclusion.tex}
+\input{chapters/7_Future_Work.tex}
+
+\newpage
+\bibliographystyle{plain}
+\bibliography{references}
+\newpage
+
+\input{chapters/appendix}
+
+\qed
+
+\end{document}
